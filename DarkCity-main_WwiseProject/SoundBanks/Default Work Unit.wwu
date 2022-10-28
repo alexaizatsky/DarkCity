@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3AE61AB6-2EFC-4F63-8AA9-F80D3E4F328F}" SchemaVersion="94">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{3AE61AB6-2EFC-4F63-8AA9-F80D3E4F328F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{0FD0941B-E931-4AEB-BD5D-8AB0FFF6D345}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Footsteps" ID="{EA371A67-B6C6-4846-B3C7-4C12114145C6}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Landing" ID="{6C55AE61-9562-4920-A77B-2756A21E300B}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Jump" ID="{63A7C97C-64D5-4E9A-A456-8FF733663E0E}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Environment" ID="{28980251-3E4C-4746-9937-6078BEF5047F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Environment" ID="{95B7D6F7-7F4D-4604-8598-8033F7CB5EEA}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Objects" ID="{29AC3EF1-9F1D-47A6-9899-060705F81225}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Transformator" ID="{81697683-A637-48E1-8CC1-CC1695DE1BB2}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

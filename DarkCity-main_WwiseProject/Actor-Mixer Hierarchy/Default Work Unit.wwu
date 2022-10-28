@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A0228D18-872F-4A7D-A50E-29E3DB487803}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{A0228D18-872F-4A7D-A50E-29E3DB487803}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Main Character" ID="{2306A08D-CA50-4129-9ACD-9B41CB46DC40}" PersistMode="Reference"/>
+				<BlendContainer Name="Environment" ID="{11033220-568F-4033-823F-3C6AF0AEC780}" ShortID="431923391">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Dogs" ID="{FD234691-295D-4535-A967-0840F4A5F3D2}" ShortID="1030517436">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C0EEF176-E295-46C8-A198-6BD85A3281CC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="9"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Dogs" ID="{342823C2-B5BF-43C1-9669-B0E9E3D74589}" ShortID="138408390">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Dogs_Bark1" ID="{5A618310-849E-4C74-9774-9E05B11A9F56}" ShortID="536432514">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dogs_Bark1" ID="{D92E1EBA-13DC-4D7A-B864-1C7D358E11C4}" ShortID="986341138">
+													<Language>SFX</Language>
+													<AudioFile>Dogs_Bark1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dogs_Bark1" ID="{D92E1EBA-13DC-4D7A-B864-1C7D358E11C4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Dogs_Bark2" ID="{27573019-DEE6-47FE-B43D-E59B8BE1DFA5}" ShortID="674753080">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dogs_Bark2" ID="{86EA935C-3AAC-4F40-AFEB-44C4929EB167}" ShortID="289706765">
+													<Language>SFX</Language>
+													<AudioFile>Dogs_Bark2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dogs_Bark2" ID="{86EA935C-3AAC-4F40-AFEB-44C4929EB167}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Silence" ID="{0C7829A6-AE3D-4541-AAAA-45D72F0400DD}" ShortID="28270780">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{CF0136B1-E31B-44D5-A1E6-68754FA94632}" ShortID="172800761" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="30"/>
+												<Property Name="LengthMax" Type="Real32" Value="15"/>
+												<Property Name="LengthMin" Type="Real32" Value="-15"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{CF0136B1-E31B-44D5-A1E6-68754FA94632}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Dogs" ID="{342823C2-B5BF-43C1-9669-B0E9E3D74589}"/>
+								<ItemRef Name="Silence" ID="{0C7829A6-AE3D-4541-AAAA-45D72F0400DD}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Thunder_Hit" ID="{C6E507AB-0712-457F-90DB-CE9084A1E6E7}" ShortID="420857240">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>5.5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7B4D12F0-8E4F-4FAD-BB61-5269D700B617}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+													<Property Name="Min" Type="Real64" Value="-20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Thunder" ID="{59E57D01-A770-4EF7-A3CB-44E7A4F011E1}" ShortID="410403093">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Thunder1" ID="{42F45254-D5B5-49A3-9E78-40C29EAE371B}" ShortID="248905923">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Thunder1" ID="{E2D126D2-01B7-426C-86D2-D8E00E157B0C}" ShortID="780846326">
+													<Language>SFX</Language>
+													<AudioFile>Thunder1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Thunder1" ID="{E2D126D2-01B7-426C-86D2-D8E00E157B0C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Thunder2" ID="{0DF13E27-A27A-45D6-BDC4-2814D479CB43}" ShortID="736480556">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Thunder2" ID="{6E66E88B-FDF3-42F4-8B4B-510136860822}" ShortID="66504976">
+													<Language>SFX</Language>
+													<AudioFile>Thunder2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Thunder2" ID="{6E66E88B-FDF3-42F4-8B4B-510136860822}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Silence" ID="{5C330A9A-056B-47FB-B25E-6CE8B51861A2}" ShortID="380064937">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{985B6E58-5758-42D4-A018-AA71D9C2D23A}" ShortID="307169300" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="30"/>
+												<Property Name="LengthMax" Type="Real32" Value="15"/>
+												<Property Name="LengthMin" Type="Real32" Value="-15"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{985B6E58-5758-42D4-A018-AA71D9C2D23A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Thunder" ID="{59E57D01-A770-4EF7-A3CB-44E7A4F011E1}"/>
+								<ItemRef Name="Silence" ID="{5C330A9A-056B-47FB-B25E-6CE8B51861A2}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<Sound Name="Rain" ID="{EEC5A897-5A46-46EE-AED3-2DD609E8B0A9}" ShortID="226665901">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rain" ID="{B97532FD-893B-4818-AAA4-4253FFDD5EC5}" ShortID="455966689">
+									<Language>SFX</Language>
+									<AudioFile>Rain.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rain" ID="{B97532FD-893B-4818-AAA4-4253FFDD5EC5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<Sound Name="Transformator" ID="{55CFFCA5-5051-43C3-B340-BFCABBCCC8FB}" ShortID="119166481">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance" ID="{330B699D-3184-413E-9D42-889A8644394F}" WorkUnitID="{C8A5E0AC-A038-4A9C-B127-D32B022EE3AA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Transformator" ID="{2D09250D-5E06-449F-AFC9-0B42A699AFF2}" ShortID="615813681">
+							<Language>SFX</Language>
+							<AudioFile>Transformator.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Transformator" ID="{2D09250D-5E06-449F-AFC9-0B42A699AFF2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

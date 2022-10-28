@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Ground_Type" ID="{5918D19D-70AB-48DD-BB7A-BDE613D8D337}">
+					<ChildrenList>
+						<Switch Name="Dry" ID="{41B6B2DD-831A-4B8C-B21B-D71FD63BDB33}"/>
+						<Switch Name="Wet" ID="{BD553443-BB8B-4F2A-90DF-E3C858890B24}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

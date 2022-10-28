@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Footsteps" ID="{EA371A67-B6C6-4846-B3C7-4C12114145C6}">
+					<ChildrenList>
+						<Action Name="" ID="{BC09222A-D332-4625-9572-09748E8BD24D}" ShortID="620078761">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{4EC733B1-D769-471E-AEC9-449D54B23275}" WorkUnitID="{2306A08D-CA50-4129-9ACD-9B41CB46DC40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Environment" ID="{95B7D6F7-7F4D-4604-8598-8033F7CB5EEA}">
+					<ChildrenList>
+						<Action Name="" ID="{1D7088D1-53BD-4B65-BB99-64A75DB0EA2B}" ShortID="939738511">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Environment" ID="{11033220-568F-4033-823F-3C6AF0AEC780}" WorkUnitID="{A0228D18-872F-4A7D-A50E-29E3DB487803}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Transformator" ID="{81697683-A637-48E1-8CC1-CC1695DE1BB2}">
+					<ChildrenList>
+						<Action Name="" ID="{E2B7E851-79C8-495E-AA16-879A06FC6653}" ShortID="244997800">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Transformator" ID="{55CFFCA5-5051-43C3-B340-BFCABBCCC8FB}" WorkUnitID="{A0228D18-872F-4A7D-A50E-29E3DB487803}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jump" ID="{63A7C97C-64D5-4E9A-A456-8FF733663E0E}">
+					<ChildrenList>
+						<Action Name="" ID="{D8E0607B-2E4B-45E5-AD29-9DC42CD6FF0D}" ShortID="965294293">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{BCC8068B-5D17-4671-A0A1-FE34C5CD6BB3}" WorkUnitID="{2306A08D-CA50-4129-9ACD-9B41CB46DC40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Landing" ID="{6C55AE61-9562-4920-A77B-2756A21E300B}">
+					<ChildrenList>
+						<Action Name="" ID="{74905B2B-6E5A-4177-B904-C22F910A4FD7}" ShortID="15850068">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Landing" ID="{7DC264DC-6C95-4408-B262-850EE5DA0B56}" WorkUnitID="{2306A08D-CA50-4129-9ACD-9B41CB46DC40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
