@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a4dce69e4af491fa02eaa7a3e9202d, type: 3}
+  m_Name: 81697683-A637-48E1-8CC1-CC1695DE1BB2
+  m_EditorClassIdentifier: 
+  objectName: Transformator
+  id: 2827845883
+  guid: 81697683-A637-48E1-8CC1-CC1695DE1BB2
