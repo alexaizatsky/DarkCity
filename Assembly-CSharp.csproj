@@ -124,7 +124,13 @@
      <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\Scripts\bullet.cs" />
+     <Compile Include="Assets\Scripts\gunLevelSystem.cs" />
+     <Compile Include="Assets\Scripts\gunPoolSystem.cs" />
+     <Compile Include="Assets\Scripts\handAnim.cs" />
      <Compile Include="Assets\Scripts\handController.cs" />
+     <Compile Include="Assets\Scripts\zombie.cs" />
+     <Compile Include="Assets\Scripts\zombieSystem.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\Ak3DPositionType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\Ak3DSpatializationMode.cs" />
@@ -361,6 +367,7 @@
      <None Include="Assets\Dark City\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
      <None Include="Assets\Knife.Hands Full Gloves\Readme.txt" />
      <None Include="Assets\MirrorReflection\wetFloor.shader" />
+     <None Include="Assets\MirrorReflection\wetFloor2.shader" />
      <None Include="Assets\Dark City\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
      <None Include="Assets\Dark City\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\Dark City\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />

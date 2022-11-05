@@ -7,7 +7,11 @@ public class handController : MonoBehaviour
     [SerializeField] private Animator handAnim;
     [SerializeField] private Camera myCam;
     [SerializeField] private GameObject handObj;
-
+    [SerializeField] private GameObject shootFxPrefab;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform gunPoint;
+    [SerializeField] private int bulletPoolCount = 30;
+    [SerializeField] private int fxPoolCount = 10;
     public enum State
     {
         idle,
@@ -24,6 +28,11 @@ public class handController : MonoBehaviour
     private bool isRun;
     private bool isShoot;
     private bool isAiming;
+
+    private GameObject[] bulletPool;
+    private GameObject[] fxPool;
+
+    private gunPoolSystem poolSystem;
     public void SetState(State s)
     {
         myState = s;
@@ -45,7 +54,10 @@ public class handController : MonoBehaviour
     
     void Start()
     {
-        
+        if (poolSystem == null)
+            poolSystem = this.gameObject.AddComponent<gunPoolSystem>();
+        poolSystem.GeneratePool(ref bulletPool, bulletPoolCount, gunPoint, bulletPrefab);
+        poolSystem.GeneratePool(ref fxPool, fxPoolCount, gunPoint, shootFxPrefab);
     }
 
     void Update()
@@ -60,6 +72,43 @@ public class handController : MonoBehaviour
 
             StartCoroutine(AimMove(_active, 0.3f));
         
+    }
+
+    void PLayShootAudio()
+    {
+        // PLAY AUDIO HERE
+    }
+
+    public void MakeShoot()
+    {
+        if (myState == State.shoot || myState == State.aimShoot)
+        {
+
+
+            int bullIndex = poolSystem.GetPoolElementIndex(ref bulletPool);
+            //print("MAKE SHOOT bull index "+bullIndex+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+            if (bullIndex < 0)
+                Debug.LogWarning("NO FREE BULLET IN POOL");
+            else
+            {
+                bulletPool[bullIndex].transform.SetParent(gunPoint);
+                bulletPool[bullIndex].transform.localPosition = Vector3.zero;
+                bulletPool[bullIndex].transform.localEulerAngles = Vector3.zero;
+                bulletPool[bullIndex].transform.SetParent(null);
+                bulletPool[bullIndex].SetActive(true);
+                bulletPool[bullIndex].GetComponent<bullet>().StartShoot(gunPoint);
+                StartCoroutine(ObjectActivation(bulletPool[bullIndex], 4, true));
+            }
+
+            int fxIndex = poolSystem.GetPoolElementIndex(ref fxPool);
+            if (fxIndex < 0 )
+                Debug.LogWarning("NO FREE FX IN POOL");
+            else
+            {
+                StartCoroutine(ObjectActivation(fxPool[fxIndex], 1.5f));
+            }
+            PLayShootAudio();
+        }
     }
     
     void GetInput()
@@ -153,6 +202,20 @@ public class handController : MonoBehaviour
            
         }
 
+        if (Input.GetMouseButton(0))
+        {
+            isShoot = true;
+            if (isAiming)
+            {
+                if(myState!= State.aimShoot)
+                    SetState(State.aimShoot);
+            }
+            else
+            {
+                if(myState!= State.shoot)
+                    SetState(State.shoot);
+            }
+        }
         if (Input.GetMouseButtonUp(0))
         {
             isShoot = false;
@@ -200,5 +263,17 @@ public class handController : MonoBehaviour
             handObj.transform.localPosition = Vector3.Lerp(sp, ep, prog);
             yield return null;
         }
+    }
+
+    IEnumerator ObjectActivation(GameObject _eff, float _time, bool _bullet = false)
+    {
+        _eff.SetActive(true);
+        yield return new WaitForSeconds(_time);
+        if(_bullet)
+            _eff.GetComponent<bullet>().StopShoot();
+        _eff.transform.SetParent(gunPoint);
+        _eff.transform.localPosition = Vector3.zero;
+        _eff.transform.localEulerAngles = Vector3.zero;
+        _eff.SetActive(false);
     }
 }

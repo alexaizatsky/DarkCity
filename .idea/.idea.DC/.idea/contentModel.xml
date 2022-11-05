@@ -198,6 +198,7 @@
         <e p="MirrorReflection" t="Include">
           <e p="MirrorReflection.cs" t="Include" />
           <e p="wetFloor.shader" t="Include" />
+          <e p="wetFloor2.shader" t="Include" />
         </e>
         <e p="MoveMotionPack" t="Include">
           <e p="SampleScene" t="Include">
@@ -413,7 +414,13 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="bullet.cs" t="Include" />
+          <e p="gunLevelSystem.cs" t="Include" />
+          <e p="gunPoolSystem.cs" t="Include" />
+          <e p="handAnim.cs" t="Include" />
           <e p="handController.cs" t="Include" />
+          <e p="zombie.cs" t="Include" />
+          <e p="zombieSystem.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
