@@ -31,10 +31,20 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/handController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/RootMotion/FinalIK/Tools/HitReaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/zombie.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gunPoolSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FirstPersonCharacter/Scripts/FirstPersonController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/zombiePartCol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FBF41107-9F93-49AF-9D72-83CBBD3A7C7C/59/f0229a4d/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gunLevelSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/RootMotion/FinalIK/_DEMOS/FBBIK/Scripts/RagdollUtilityDemo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/testCube.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/zombiePoolSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/RootMotion/Shared Demo Assets/Scripts/Camera Controllers/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/zombieLevelSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FirstPersonCharacter/Scripts/FirstPersonController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/RootMotion/FinalIK/_DEMOS/FBBIK/Scripts/HitReactionTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/RootMotion/FinalIK/Ragdoll Utility/RagdollUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/handAnim.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -44,9 +54,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/handAnim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gunPoolSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/MirrorReflection/wetFloor2.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/handController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gunLevelSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/RootMotion/FinalIK/Tools/HitReaction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/testCube.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/handController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/zombiePartCol.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/zombiePoolSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/zombieLevelSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/zombie.cs" />
       </list>
     </option>
   </component>
@@ -74,7 +90,11 @@
       <workItem from="1667151385982" duration="3358000" />
       <workItem from="1667203535020" duration="10262000" />
       <workItem from="1667291925377" duration="3672000" />
-      <workItem from="1667637159208" duration="3759000" />
+      <workItem from="1667637159208" duration="9549000" />
+      <workItem from="1667729174427" duration="1869000" />
+      <workItem from="1667824603701" duration="779000" />
+      <workItem from="1668508569617" duration="3460000" />
+      <workItem from="1668590486776" duration="9431000" />
     </task>
     <servers />
   </component>

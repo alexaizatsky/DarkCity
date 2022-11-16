@@ -38,6 +38,21 @@ public class bullet : MonoBehaviour
             if(myRigi.velocity.magnitude > 13)
                 gunLevelSystem.RegisterBulletCollision(new bulletCollisionDataContainer(col.contacts[0].point, heroPos, 9));
         }
+        else if(col.gameObject.layer ==11)
+        {
+            if (myRigi.velocity.magnitude > 13)
+            {
+
+                // print("ZOMBIE BULLET COLLISION "+col.gameObject.name+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+                if (col.gameObject.GetComponent<zombiePartCol>() != null)
+                {
+                    //print("ZOMBIE BULLET COLLISION "+col.gameObject.name+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+                   // col.gameObject.GetComponent<zombiePartCol>().GetHit(col.contacts[0].point, heroPos.position);
+                   // StopShoot();
+                    //this.gameObject.SetActive(false);
+                }
+            }
+        }
     }
 
 

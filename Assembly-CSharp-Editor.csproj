@@ -50,6 +50,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\BoneHelper.cs" />
+     <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\ColliderController.cs" />
+     <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\ColliderHelper.cs" />
+     <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\JointController.cs" />
+     <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\RagdollController.cs" />
+     <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\RagdollPart.cs" />
+     <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\RagdollProperties.cs" />
+     <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\Ragdoller.cs" />
+     <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\RigidController.cs" />
+     <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\WeightCalculator.cs" />
      <Compile Include="Assets\CustomAssets\OmniSARTechnologies\Common\Helper\Editor\GUI\EditorGUIHelper.cs" />
      <Compile Include="Assets\CustomAssets\OmniSARTechnologies\LiteFPSCounter\Editor\Scripts\LiteFPSCounterEditor.cs" />
      <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />

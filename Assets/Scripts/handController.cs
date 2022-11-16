@@ -91,6 +91,7 @@ public class handController : MonoBehaviour
                 Debug.LogWarning("NO FREE BULLET IN POOL");
             else
             {
+                RaycastShot();
                 bulletPool[bullIndex].transform.SetParent(gunPoint);
                 bulletPool[bullIndex].transform.localPosition = Vector3.zero;
                 bulletPool[bullIndex].transform.localEulerAngles = Vector3.zero;
@@ -110,7 +111,23 @@ public class handController : MonoBehaviour
             PLayShootAudio();
         }
     }
-    
+
+    void RaycastShot()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(gunPoint.position, gunPoint.forward, out hit))
+        {
+            if (hit.collider.gameObject.layer == 11)
+            {
+                if (hit.collider.gameObject.GetComponent<zombiePartCol>() != null)
+                {
+                    print("RAYCAST ZOMBIE HIT "+hit.collider.gameObject.name);
+                    zombiePartCol col = hit.collider.gameObject.GetComponent<zombiePartCol>();
+                    col.GetHit(hit.point, gunPoint.position);
+                }
+            }
+        }
+    }
     void GetInput()
     {
         if (Input.GetMouseButtonDown(1))

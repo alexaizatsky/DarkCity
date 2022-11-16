@@ -129,7 +129,11 @@
      <Compile Include="Assets\Scripts\gunPoolSystem.cs" />
      <Compile Include="Assets\Scripts\handAnim.cs" />
      <Compile Include="Assets\Scripts\handController.cs" />
+     <Compile Include="Assets\Scripts\testCube.cs" />
      <Compile Include="Assets\Scripts\zombie.cs" />
+     <Compile Include="Assets\Scripts\zombieLevelSystem.cs" />
+     <Compile Include="Assets\Scripts\zombiePartCol.cs" />
+     <Compile Include="Assets\Scripts\zombiePoolSystem.cs" />
      <Compile Include="Assets\Scripts\zombieSystem.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\Ak3DPositionType.cs" />

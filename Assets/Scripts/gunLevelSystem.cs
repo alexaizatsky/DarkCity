@@ -77,8 +77,8 @@ public class gunLevelSystem : MonoBehaviour
             //Vector3 sendPoint = _data.bulletPoint + (_data.heroPoint - _data.bulletPoint).normalized;
             //Vector3 dir1 = (_data.bulletPoint - sendPoint).normalized;
             //Vector3 dir2 = dir1+new Vector3(0.1f,0,0);
-            print("DECAL bullet "+_data.bulletPoint+" hero "+_data.heroPoint+" layer "+_data.colLayer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
-            print("DECAL sendPoint "+sendPoint+" dir1 "+dir1+" dir2r "+dir2+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+            //print("DECAL bullet "+_data.bulletPoint+" hero "+_data.heroPoint+" layer "+_data.colLayer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+            //print("DECAL sendPoint "+sendPoint+" dir1 "+dir1+" dir2r "+dir2+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
             Vector3 decalPoint = new Vector3();
             Vector3 rightPoint = new Vector3();
             Vector3 upPoint = new Vector3();
@@ -104,7 +104,7 @@ public class gunLevelSystem : MonoBehaviour
             int check = 0;
             if (Physics.Raycast(sendPoint, dir1, out hit, 100, lm))
             {
-                print(hit.collider.gameObject.name+" CHECK 1 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+                //print(hit.collider.gameObject.name+" CHECK 1 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
                 decalPoint = hit.point;
                 check++;
             }
@@ -112,17 +112,17 @@ public class gunLevelSystem : MonoBehaviour
             {
                 if (Physics.Raycast(sendPoint, dir1, out hit, 100))
                 {
-                    print(hit.collider.gameObject.name+" FAIL CHECK 1 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+                    //print(hit.collider.gameObject.name+" FAIL CHECK 1 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
                 }
                 else
                 {
-                    print("FAIL CHECK 1 AT ALL");
+                   // print("FAIL CHECK 1 AT ALL");
                 }
                 
             }
             if (Physics.Raycast(sendPoint, dir2, out hit, 100,lm))
             {
-                print(hit.collider.gameObject.name+" CHECK 2 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+               // print(hit.collider.gameObject.name+" CHECK 2 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
                 rightPoint = hit.point;
                 check++;
             }
@@ -130,16 +130,16 @@ public class gunLevelSystem : MonoBehaviour
             {
                 if (Physics.Raycast(sendPoint, dir2, out hit, 100))
                 {
-                    print(hit.collider.gameObject.name+" FAIL CHECK 2 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+                    //print(hit.collider.gameObject.name+" FAIL CHECK 2 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
                 }
                 else
                 {
-                    print("FAIL CHECK 2 AT ALL");
+                    //print("FAIL CHECK 2 AT ALL");
                 }
             }
             if (Physics.Raycast(sendPoint, dir3, out hit, 100,lm))
             {
-                print(hit.collider.gameObject.name+" CHECK 3 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+                //print(hit.collider.gameObject.name+" CHECK 3 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
                 upPoint = hit.point;
                 check++;
             }
@@ -147,16 +147,16 @@ public class gunLevelSystem : MonoBehaviour
             {
                 if (Physics.Raycast(sendPoint, dir3, out hit, 100))
                 {
-                    print(hit.collider.gameObject.name+" FAIL CHECK 3 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+                    //print(hit.collider.gameObject.name+" FAIL CHECK 3 "+hit.collider.gameObject.layer+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
                 }
                 else
                 {
-                    print("FAIL CHECK 3 AT ALL");
+                    //print("FAIL CHECK 3 AT ALL");
                 }
             }
             if (check >= 3)
             {
-                print("YES ckeck Bullet decal"+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+                //print("YES ckeck Bullet decal"+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
                 decalPool[n].SetActive(true);
                 decalPool[n].transform.position = decalPoint;
                 Vector3 dirR = (rightPoint - decalPoint).normalized;
@@ -168,7 +168,7 @@ public class gunLevelSystem : MonoBehaviour
             }
             else
             {
-                print("NO ckeck Bullet decal "+check+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
+                //print("NO ckeck Bullet decal "+check+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
             }
            
         }
