@@ -6,9 +6,9 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	307169300	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Thunder_Hit\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	66504976	Thunder2	Y:\Documents\PROJECTS\Games\Dark City\DarkCity-main\DarkCity-main_WwiseProject\.cache\Windows\SFX\Thunder2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Thunder_Hit\Thunder\Thunder2		2053016
-	289706765	Dogs_Bark2	Y:\Documents\PROJECTS\Games\Dark City\DarkCity-main\DarkCity-main_WwiseProject\.cache\Windows\SFX\Dogs_Bark2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dogs\Dogs\Dogs_Bark2		416072
-	455966689	Rain	Y:\Documents\PROJECTS\Games\Dark City\DarkCity-main\DarkCity-main_WwiseProject\.cache\Windows\SFX\Rain_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Rain		2852616
-	780846326	Thunder1	Y:\Documents\PROJECTS\Games\Dark City\DarkCity-main\DarkCity-main_WwiseProject\.cache\Windows\SFX\Thunder1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Thunder_Hit\Thunder\Thunder1		2257092
-	986341138	Dogs_Bark1	Y:\Documents\PROJECTS\Games\Dark City\DarkCity-main\DarkCity-main_WwiseProject\.cache\Windows\SFX\Dogs_Bark1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dogs\Dogs\Dogs_Bark1		307228
+	66504976	Thunder2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Windows\SFX\Thunder2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Thunder_Hit\Thunder\Thunder2		2053016
+	289706765	Dogs_Bark2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Windows\SFX\Dogs_Bark2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dogs\Dogs\Dogs_Bark2		416072
+	455966689	Rain	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Windows\SFX\Rain_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Rain		2852616
+	780846326	Thunder1	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Windows\SFX\Thunder1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Thunder_Hit\Thunder\Thunder1		2257092
+	986341138	Dogs_Bark1	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Windows\SFX\Dogs_Bark1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dogs\Dogs\Dogs_Bark1		307228
 

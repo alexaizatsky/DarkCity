@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4ef425c90d2518489a3a853d16446e47
     GuidInternal: 
-    m_lastTime: -8585404925014775808
+    m_lastTime: -8585325818244775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 7006eca5dc83bb4ab60b469cc0b46916
     GuidInternal: 
-    m_lastTime: -8585404925014775808
+    m_lastTime: -8585325818244775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: b61ae63afc2e634f8aa9f80d3e4f328f
     GuidInternal: 
-    m_lastTime: -8585401565184775808
+    m_lastTime: -8585325689414775808
     List:
     - name: Environment
       guid: 510298284c3e464799376078bef5047f
@@ -65,7 +65,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: a10ebc08e636b04c9bfc9db8a10587a9
     GuidInternal: 
-    m_lastTime: -8585401565184775808
+    m_lastTime: -8585325735864775808
     List:
     - name: Environment
       guid: f7d6b7954d7f044685988033f7cb5eea
@@ -91,6 +91,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.732664
       minDuration: 0.371786
+    - name: Jump
+      guid: 7cc9a763d5649a4ea4568ff733663e0e
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Jump
+        ObjectType: 3
+      Path: Default Work Unit/Jump
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
+    - name: Landing
+      guid: 61ae556c62952049a77b2756a21e300b
+      id: 2548270042
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Landing
+        ObjectType: 3
+      Path: Default Work Unit/Landing
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Transformator
       guid: 8376698137a6e1488cc1cc1695de1bb2
       id: 2827845883
@@ -103,26 +127,46 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events/Weapon.wwu
+    ParentPhysicalPath: Events/Default Work Unit.wwu
+    guid: b9e130ea639ded48b54844c50d56df45
+    GuidInternal: 
+    m_lastTime: -8585325735864775808
+    List:
+    - name: M16_Riffle_Shot_Player
+      guid: 5fdbc4029b355a48a1ada18c1871423b
+      id: 4143027357
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Weapon
+        ObjectType: 12
+      - ElementName: M16_Riffle_Shot_Player
+        ObjectType: 3
+      Path: Default Work Unit/Weapon/M16_Riffle_Shot_Player
+      maxAttenuation: 0
+      maxDuration: 1.829155
+      minDuration: 1.315389
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: da9d44e1b38b664f9be56be0fa2eea0c
     GuidInternal: 
-    m_lastTime: -8585404925014775808
+    m_lastTime: -8585325818244775808
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 7d98cfd1321f51418ee1d8ed39f091d1
     GuidInternal: 
-    m_lastTime: -8585404925014775808
+    m_lastTime: -8585325818244775808
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 0dcb412ad7f56e48903becfc00cd8685
     GuidInternal: 
-    m_lastTime: -8585402506914775808
+    m_lastTime: -8585325818244775808
     List:
     - name: Ground_Type
       guid: 9dd11859ab70dd48bb7abde613d8d337
@@ -154,13 +198,12 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 70430c27ef9a1743aea7162364631488
     GuidInternal: 
-    m_lastTime: -8585404925014775808
+    m_lastTime: -8585325818244775808
     List: []
   ExpandedItems:
   - /DarkCity-main_WwiseProject
   - /DarkCity-main_WwiseProject/Events
   - /DarkCity-main_WwiseProject/Events/Default Work Unit
-  - /DarkCity-main_WwiseProject/SoundBanks
-  - /DarkCity-main_WwiseProject/SoundBanks/Default Work Unit
+  - /DarkCity-main_WwiseProject/Events/Default Work Unit/Weapon
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

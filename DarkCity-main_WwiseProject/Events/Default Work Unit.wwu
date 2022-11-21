@@ -61,6 +61,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<WorkUnit Name="Weapon" ID="{EA30E1B9-9D63-48ED-B548-44C50D56DF45}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

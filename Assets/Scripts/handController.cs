@@ -77,6 +77,7 @@ public class handController : MonoBehaviour
     void PLayShootAudio()
     {
         // PLAY AUDIO HERE
+        AkSoundEngine.PostEvent("M16_Riffle_Shot_Player", gameObject);
     }
 
     public void MakeShoot()

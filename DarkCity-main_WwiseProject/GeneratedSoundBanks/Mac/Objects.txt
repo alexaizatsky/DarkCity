@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	2827845883	Transformator			\Default Work Unit\Transformator	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	615813681	Transformator	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Transformator_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transformator		420284
+	615813681	Transformator	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Transformator_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transformator		420284
 

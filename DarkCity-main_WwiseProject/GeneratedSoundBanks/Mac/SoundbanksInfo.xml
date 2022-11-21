@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Test/DarkCity-main/DarkCity-main_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Test/DarkCity-main/DarkCity-main_WwiseProject/.cache/Mac/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Test/DarkCity-main/DarkCity-main_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ProjectRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Dark City/DarkCity-main_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Dark City/DarkCity-main_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Dark City/DarkCity-main_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Test/DarkCity-main/DarkCity-main_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Dark City/DarkCity-main_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -68,11 +68,24 @@
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.371786" DurationMax="0.732664"/>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Jump" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="2548270042" Name="Landing" ObjectPath="\Events\Default Work Unit\Landing" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
+				<Event Id="4143027357" Name="M16_Riffle_Shot_Player" ObjectPath="\Events\Default Work Unit\Weapon\M16_Riffle_Shot_Player" DurationType="OneShot" DurationMin="1.315389" DurationMax="1.829155"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="132006117" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet4.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet4_58746438.wem</Path>
+				</File>
+				<File Id="177491537" Language="SFX">
+					<ShortName>CaseDrop3.wav</ShortName>
+					<Path>SFX/CaseDrop3_89253CE8.wem</Path>
+				</File>
+				<File Id="179117578" Language="SFX">
+					<ShortName>M16_RiffleShot2.wav</ShortName>
+					<Path>SFX/M16_RiffleShot2_68DF6C99.wem</Path>
+				</File>
+				<File Id="185288935" Language="SFX">
+					<ShortName>M16_RiffleShot1.wav</ShortName>
+					<Path>SFX/M16_RiffleShot1_D501FC6D.wem</Path>
 				</File>
 				<File Id="193301177" Language="SFX">
 					<ShortName>Jump3.wav</ShortName>
@@ -122,29 +135,61 @@
 					<ShortName>Footsteps\Wet\FS_Wet6.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet6_AEAA40FE.wem</Path>
 				</File>
+				<File Id="433133940" Language="SFX">
+					<ShortName>M16_RiffleShot3.wav</ShortName>
+					<Path>SFX/M16_RiffleShot3_37D88494.wem</Path>
+				</File>
 				<File Id="444859194" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet2.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet2_A8B00FCE.wem</Path>
+				</File>
+				<File Id="458132233" Language="SFX">
+					<ShortName>M16_RiffleShot5.wav</ShortName>
+					<Path>SFX/M16_RiffleShot5_A128D43B.wem</Path>
+				</File>
+				<File Id="470774498" Language="SFX">
+					<ShortName>CaseDrop2.wav</ShortName>
+					<Path>SFX/CaseDrop2_83831198.wem</Path>
 				</File>
 				<File Id="480013220" Language="SFX">
 					<ShortName>Landing4.wav</ShortName>
 					<Path>SFX/Landing4_10C4C929.wem</Path>
 				</File>
+				<File Id="505219137" Language="SFX">
+					<ShortName>M16_RiffleShot4.wav</ShortName>
+					<Path>SFX/M16_RiffleShot4_9BAF07D9.wem</Path>
+				</File>
 				<File Id="532015600" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet4.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet4_DC92C813.wem</Path>
+				</File>
+				<File Id="594762900" Language="SFX">
+					<ShortName>CaseDrop4.wav</ShortName>
+					<Path>SFX/CaseDrop4_EF63C500.wem</Path>
 				</File>
 				<File Id="609066579" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet3.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet3_884BFA31.wem</Path>
 				</File>
+				<File Id="631541176" Language="SFX">
+					<ShortName>CaseDrop3.wav</ShortName>
+					<Path>SFX/CaseDrop3_8F049691.wem</Path>
+				</File>
 				<File Id="633276371" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet3.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet3_4CE95CF9.wem</Path>
 				</File>
+				<File Id="648670622" Language="SFX">
+					<ShortName>CaseDrop1.wav</ShortName>
+					<Path>SFX/CaseDrop1_09682341.wem</Path>
+				</File>
 				<File Id="652296919" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep03.wav</ShortName>
 					<Path>SFX/Footsteps/Concrete/Footstep03_0B0E05F9.wem</Path>
+				</File>
+				<File Id="660856220" Language="SFX">
+					<ShortName>CaseDrop2.wav</ShortName>
+					<Path>SFX/CaseDrop2_3E8EF46C.wem</Path>
 				</File>
 				<File Id="692758138" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet5.wav</ShortName>
@@ -153,6 +198,10 @@
 				<File Id="707884368" Language="SFX">
 					<ShortName>FS_Wet1.wav</ShortName>
 					<Path>SFX/FS_Wet1_C90553BB.wem</Path>
+				</File>
+				<File Id="715785279" Language="SFX">
+					<ShortName>CaseDrop4.wav</ShortName>
+					<Path>SFX/CaseDrop4_36E6AFE2.wem</Path>
 				</File>
 				<File Id="747257247" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet2.wav</ShortName>
@@ -169,6 +218,10 @@
 				<File Id="883380855" Language="SFX">
 					<ShortName>Jump2.wav</ShortName>
 					<Path>SFX/Jump2_10C4C929.wem</Path>
+				</File>
+				<File Id="936616754" Language="SFX">
+					<ShortName>CaseDrop1.wav</ShortName>
+					<Path>SFX/CaseDrop1_DFA09826.wem</Path>
 				</File>
 				<File Id="984751732" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep02.wav</ShortName>

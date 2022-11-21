@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="94">
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1669031883" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Actor-Mixer Hierarchy\Main Character.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Actor-Mixer Hierarchy\Weapon.wwu" DateLow="1669031883" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Actor-Mixer Hierarchy\Zombies.wwu" DateLow="1669031883" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\DarkCity-main_WwiseProject.crossover.wsettings" DateLow="1669035286" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\DarkCity-main_WwiseProject.wproj" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Effects\Factory Effects.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Events\Default Work Unit.wwu" DateLow="1669033299" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Events\Weapon.wwu" DateLow="1669033299" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Queries\Factory Queries.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\States\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1669025061" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1661464971" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\Actor-Mixer Hierarchy\Main Character.wwu" DateLow="1661723851" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1661723752" DateHigh="0"/>

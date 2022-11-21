@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a4dce69e4af491fa02eaa7a3e9202d, type: 3}
+  m_Name: 02C4DB5F-359B-485A-A1AD-A18C1871423B
+  m_EditorClassIdentifier: 
+  objectName: M16_Riffle_Shot_Player
+  id: 4143027357
+  guid: 02C4DB5F-359B-485A-A1AD-A18C1871423B

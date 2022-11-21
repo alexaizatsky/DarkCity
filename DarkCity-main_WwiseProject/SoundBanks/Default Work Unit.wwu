@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{0FD0941B-E931-4AEB-BD5D-8AB0FFF6D345}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Footsteps" ID="{EA371A67-B6C6-4846-B3C7-4C12114145C6}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Weapon" ID="{EA30E1B9-9D63-48ED-B548-44C50D56DF45}" WorkUnitID="{EA30E1B9-9D63-48ED-B548-44C50D56DF45}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Landing" ID="{6C55AE61-9562-4920-A77B-2756A21E300B}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Jump" ID="{63A7C97C-64D5-4E9A-A456-8FF733663E0E}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

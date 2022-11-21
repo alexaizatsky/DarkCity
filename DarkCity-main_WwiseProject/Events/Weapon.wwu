@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EA30E1B9-9D63-48ED-B548-44C50D56DF45}" SchemaVersion="94" RootDocumentID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}">
+	<Events>
+		<WorkUnit Name="Weapon" ID="{EA30E1B9-9D63-48ED-B548-44C50D56DF45}" OwnerID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="M16_Riffle_Shot_Player" ID="{02C4DB5F-359B-485A-A1AD-A18C1871423B}">
+					<ChildrenList>
+						<Action Name="" ID="{DA898407-DC81-44B0-9BE2-818CC223B6BE}" ShortID="662374635">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Riffle_M16_Shot_Player" ID="{B4A854F4-3673-4D66-8B22-805A10A8B92A}" WorkUnitID="{F7D3385E-6B05-41EB-AC3A-CA817014FB03}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A134D3BA-3E9E-40D7-ADBB-AFDB5337EC5A}" ShortID="722096675">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Case Drop" ID="{E2E90079-76B3-4B9A-860A-B3DD5173C77C}" WorkUnitID="{F7D3385E-6B05-41EB-AC3A-CA817014FB03}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

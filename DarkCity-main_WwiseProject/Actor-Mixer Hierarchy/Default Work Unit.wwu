@@ -290,6 +290,8 @@
 						<ActiveSource Name="Transformator" ID="{2D09250D-5E06-449F-AFC9-0B42A699AFF2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<WorkUnit Name="Zombies" ID="{D46275AF-FCD2-4B96-86F7-7DD2C15B8BF2}" PersistMode="Reference"/>
+				<WorkUnit Name="Weapon" ID="{F7D3385E-6B05-41EB-AC3A-CA817014FB03}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

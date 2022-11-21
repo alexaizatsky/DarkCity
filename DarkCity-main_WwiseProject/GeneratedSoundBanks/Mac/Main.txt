@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2548270042	Landing			\Default Work Unit\Landing	
 	3833651337	Jump			\Default Work Unit\Jump	
+	4143027357	M16_Riffle_Shot_Player			\Default Work Unit\Weapon\M16_Riffle_Shot_Player	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	4040317175	Ground_Type			\Default Work Unit\Ground_Type	
@@ -11,32 +12,45 @@ Switch	ID	Name	Switch Group			Notes
 	1181096339	Wet	Ground_Type			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	132006117	FS_Wet4	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet4_58746438.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet4		85232
-	193301177	Jump3	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Jump3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump3		96064
-	252314752	FS_Wet1	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\FS_Wet1_AD9BA4FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet1		13732
-	255237192	Landing3	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Landing3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Landing\Landing3		96064
-	280838170	FS_Wet5	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet5_2F665968.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet5		13396
-	284860275	Jump	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump		96064
-	328943342	Footstep02	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep02_7AB6F5BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Toe\Footstep02		43700
-	345654471	Footstep01	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep01_183C8B8E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Toe\Footstep01		37642
-	347832923	Footstep04	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep04_804F5F6F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Toe\Footstep04		32582
-	369664790	Footstep03	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep03_D9BFFB44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Heel\Footstep03		8224
-	371876291	Landing2	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Landing2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Landing\Landing2		96064
-	399375096	FS_Wet6	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet6_895C1F4B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet6		79564
-	427281166	FS_Wet6	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet6_AEAA40FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet6		17564
-	444859194	FS_Wet2	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet2_A8B00FCE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet2		23232
-	480013220	Landing4	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Landing4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Landing\Landing4		96064
-	532015600	FS_Wet4	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet4_DC92C813.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet4		12564
-	609066579	FS_Wet3	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet3_884BFA31.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet3		83396
-	633276371	FS_Wet3	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet3_4CE95CF9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet3		13232
-	652296919	Footstep03	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep03_0B0E05F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Toe\Footstep03		45080
-	692758138	FS_Wet5	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet5_E0077FCC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet5		83396
-	707884368	FS_Wet1	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\FS_Wet1_C90553BB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet1		83564
-	747257247	FS_Wet2	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet2_4801DB24.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet2		73564
-	780550850	Landing	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Landing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Landing\Landing		96064
-	799275385	Footstep01	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep01_2B544C24.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Heel\Footstep01		11728
-	883380855	Jump2	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Jump2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump2		96064
-	984751732	Footstep02	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep02_01E94577.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Heel\Footstep02		6532
-	996462194	Footstep04	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep04_0C4B17BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Heel\Footstep04		6048
-	1012718319	Jump4	Y:\Documents\GitHub\Test\DarkCity-main\DarkCity-main_WwiseProject\.cache\Mac\SFX\Jump4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump4		96064
+	132006117	FS_Wet4	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet4_58746438.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet4		85232
+	177491537	CaseDrop3	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\CaseDrop3_89253CE8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Case Drop\Case_Drop1\CaseDrop3		59936
+	179117578	M16_RiffleShot2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\M16_RiffleShot2_68DF6C99.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Riffle_M16_Shot_Player\M16_RiffleShot2		78380
+	185288935	M16_RiffleShot1	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\M16_RiffleShot1_D501FC6D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Riffle_M16_Shot_Player\M16_RiffleShot1		76892
+	193301177	Jump3	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Jump3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump3		96064
+	252314752	FS_Wet1	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\FS_Wet1_AD9BA4FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet1		13732
+	255237192	Landing3	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Landing3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Landing\Landing3		96064
+	280838170	FS_Wet5	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet5_2F665968.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet5		13396
+	284860275	Jump	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump		96064
+	328943342	Footstep02	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep02_7AB6F5BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Toe\Footstep02		43700
+	345654471	Footstep01	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep01_183C8B8E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Toe\Footstep01		37642
+	347832923	Footstep04	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep04_804F5F6F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Toe\Footstep04		32582
+	369664790	Footstep03	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep03_D9BFFB44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Heel\Footstep03		8224
+	371876291	Landing2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Landing2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Landing\Landing2		96064
+	399375096	FS_Wet6	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet6_895C1F4B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet6		79564
+	427281166	FS_Wet6	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet6_AEAA40FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet6		17564
+	433133940	M16_RiffleShot3	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\M16_RiffleShot3_37D88494.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Riffle_M16_Shot_Player\M16_RiffleShot3		68512
+	444859194	FS_Wet2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet2_A8B00FCE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet2		23232
+	458132233	M16_RiffleShot5	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\M16_RiffleShot5_A128D43B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Riffle_M16_Shot_Player\M16_RiffleShot5		67132
+	470774498	CaseDrop2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\CaseDrop2_83831198.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Case Drop\Case_Drop2\CaseDrop2		158548
+	480013220	Landing4	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Landing4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Landing\Landing4		96064
+	505219137	M16_RiffleShot4	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\M16_RiffleShot4_9BAF07D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Riffle_M16_Shot_Player\M16_RiffleShot4		79004
+	532015600	FS_Wet4	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet4_DC92C813.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet4		12564
+	594762900	CaseDrop4	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\CaseDrop4_EF63C500.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Case Drop\Case_Drop1\CaseDrop4		49064
+	609066579	FS_Wet3	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet3_884BFA31.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet3		83396
+	631541176	CaseDrop3	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\CaseDrop3_8F049691.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Case Drop\Case_Drop2\CaseDrop3		194648
+	633276371	FS_Wet3	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet3_4CE95CF9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Heel\FS_Wet3		13232
+	648670622	CaseDrop1	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\CaseDrop1_09682341.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Case Drop\Case_Drop1\CaseDrop1		58636
+	652296919	Footstep03	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep03_0B0E05F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Toe\Footstep03		45080
+	660856220	CaseDrop2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\CaseDrop2_3E8EF46C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Case Drop\Case_Drop1\CaseDrop2		55956
+	692758138	FS_Wet5	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet5_E0077FCC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet5		83396
+	707884368	FS_Wet1	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\FS_Wet1_C90553BB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet1		83564
+	715785279	CaseDrop4	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\CaseDrop4_36E6AFE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Case Drop\Case_Drop2\CaseDrop4		171948
+	747257247	FS_Wet2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Wet\FS_Wet2_4801DB24.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Puddle\FS_Puddle_Toe\FS_Wet2		73564
+	780550850	Landing	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Landing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Landing\Landing		96064
+	799275385	Footstep01	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep01_2B544C24.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Heel\Footstep01		11728
+	883380855	Jump2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Jump2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump2		96064
+	936616754	CaseDrop1	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\CaseDrop1_DFA09826.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\Case Drop\Case_Drop2\CaseDrop1		140940
+	984751732	Footstep02	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep02_01E94577.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Heel\Footstep02		6532
+	996462194	Footstep04	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Footsteps\Concrete\Footstep04_0C4B17BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Concrete1\FS_Concrete_Heel\Footstep04		6048
+	1012718319	Jump4	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Jump4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump4		96064
 

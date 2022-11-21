@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{E2C62CE0-0B4B-3429-DAE6-E86D781694B5}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/handController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/handController.cs" Line="80" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Dark City" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="63fc05d8-11e1-466c-a335-8a664c489251" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
