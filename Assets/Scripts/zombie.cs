@@ -14,7 +14,9 @@ public class zombie : MonoBehaviour
     [SerializeField] private ZombiePartContainer[] zombieParts;
     private Sequence seq;
     private Transform heroT;
-    
+
+    public AK.Wwise.Event roaring;
+
     public enum State
     {
         idle,
@@ -26,7 +28,8 @@ public class zombie : MonoBehaviour
     }
 
     public State myState;
-    
+
+ 
     void Start()
     {
         Init();
@@ -62,6 +65,7 @@ public class zombie : MonoBehaviour
             case State.scream:
                 myAnim.SetInteger("animInt",3);
                 DOVirtual.DelayedCall(1.5f, AfterScreamAttack);
+                roaring.Post(gameObject);
                 break;
             case State.attack:
                 myAnim.SetInteger("animInt",4);

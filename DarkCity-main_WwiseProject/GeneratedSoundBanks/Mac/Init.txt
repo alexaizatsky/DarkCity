@@ -1,5 +1,27 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	4132375975	Tounel_Reverb			\Default Work Unit\Tounel_Reverb	
+
+State	ID	Name	State Group			Notes
+	0	None	Tounel_Reverb			
+	930712164	Off	Tounel_Reverb			
+	1651971902	On	Tounel_Reverb			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	20754959	Off	Tounel_Reverb	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Reverb_Tounel		
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	983310469	AUX			\Default Work Unit\Master Audio Bus\World\AUX	
+	2609808943	World			\Default Work Unit\Master Audio Bus\World	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2022371148	CityReverb			\Default Work Unit\Master Audio Bus\World\AUX\CityReverb	
+	3620476813	Reverb_Tounel			\Default Work Unit\Master Audio Bus\World\AUX\Reverb_Tounel	
+
+Effect plug-ins	ID	Name	Type				Notes
+	131511410	Let_The_Power_Fall	Wwise Stereo Delay			
+	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	2656259783	PA_Announcement1	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

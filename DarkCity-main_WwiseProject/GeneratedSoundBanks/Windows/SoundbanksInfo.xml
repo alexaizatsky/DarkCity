@@ -1,46 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Dark City/DarkCity-main_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Dark City/DarkCity-main_WwiseProject/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Dark City/DarkCity-main_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/DarkCity/DarkCity-main_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/DarkCity/DarkCity-main_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/DarkCity/DarkCity-main_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Dark City/DarkCity-main_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/macbook/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/DarkCity/DarkCity-main_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1229948536" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
-			<ShortName>Environment</ShortName>
-			<Path>Environment.bnk</Path>
-			<IncludedEvents>
-				<Event Id="1229948536" Name="Environment" ObjectPath="\Events\Default Work Unit\Environment" DurationType="Infinite"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="66504976" Language="SFX">
-					<ShortName>Thunder2.wav</ShortName>
-					<Path>SFX/Thunder2_10C4C929.wem</Path>
-				</File>
-				<File Id="289706765" Language="SFX">
-					<ShortName>Dogs_Bark2.wav</ShortName>
-					<Path>SFX/Dogs_Bark2_10C4C929.wem</Path>
-				</File>
-				<File Id="455966689" Language="SFX">
-					<ShortName>Rain.wav</ShortName>
-					<Path>SFX/Rain_D79FB2B7.wem</Path>
-				</File>
-				<File Id="780846326" Language="SFX">
-					<ShortName>Thunder1.wav</ShortName>
-					<Path>SFX/Thunder1_10C4C929.wem</Path>
-				</File>
-				<File Id="986341138" Language="SFX">
-					<ShortName>Dogs_Bark1.wav</ShortName>
-					<Path>SFX/Dogs_Bark1_10C4C929.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
@@ -51,7 +21,7 @@
 			<ShortName>Objects</ShortName>
 			<Path>Objects.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2827845883" Name="Transformator" ObjectPath="\Events\Default Work Unit\Transformator" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="2827845883" Name="Transformator" ObjectPath="\Events\Default Work Unit\Transformator" MaxAttenuation="30.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="615813681" Language="SFX">
@@ -65,12 +35,36 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2314377922" Name="BarrelExplosion" ObjectPath="\Events\Default Work Unit\BarrelExplosion" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="1.322389" DurationMax="1.552737"/>
+				<Event Id="547487259" Name="CityEnvironment" ObjectPath="\Events\Default Work Unit\CityEnvironment" DurationType="Infinite"/>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.371786" DurationMax="0.732664"/>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Jump" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="2548270042" Name="Landing" ObjectPath="\Events\Default Work Unit\Landing" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
-				<Event Id="4143027357" Name="M16_Riffle_Shot_Player" ObjectPath="\Events\Default Work Unit\Weapon\M16_Riffle_Shot_Player" DurationType="OneShot" DurationMin="1.315389" DurationMax="1.829155"/>
+				<Event Id="4143027357" Name="M16_Riffle_Shot_Player" ObjectPath="\Events\Default Work Unit\Weapon\M16_Riffle_Shot_Player" DurationType="OneShot" DurationMin="1.376389" DurationMax="1.742497"/>
+				<Event Id="2050195728" Name="ZombieFootsteps" ObjectPath="\Events\Default Work Unit\ZombieFootsteps" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.669699" DurationMax="1.123378"/>
+				<Event Id="1071411313" Name="ZombieRoaring" ObjectPath="\Events\Default Work Unit\ZombieRoaring" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.525488" DurationMax="2.038701"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="6193926" Language="SFX">
+					<ShortName>DC_Zombie_Roaring1.wav</ShortName>
+					<Path>SFX/DC_Zombie_Roaring1_10C4C929.wem</Path>
+				</File>
+				<File Id="18806997" Language="SFX">
+					<ShortName>DC_Zombie_Roaring2.wav</ShortName>
+					<Path>SFX/DC_Zombie_Roaring2_FB58FCED.wem</Path>
+				</File>
+				<File Id="66504976" Language="SFX">
+					<ShortName>Thunder2.wav</ShortName>
+					<Path>SFX/Thunder2_10C4C929.wem</Path>
+				</File>
+				<File Id="67343330" Language="SFX">
+					<ShortName>FS_Zombie.wav</ShortName>
+					<Path>SFX/FS_Zombie_8CCD773F.wem</Path>
+				</File>
+				<File Id="86408245" Language="SFX">
+					<ShortName>FS_Zombie.wav</ShortName>
+					<Path>SFX/FS_Zombie_4E6DFC93.wem</Path>
+				</File>
 				<File Id="132006117" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet4.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet4_58746438.wem</Path>
@@ -91,6 +85,10 @@
 					<ShortName>Jump3.wav</ShortName>
 					<Path>SFX/Jump3_10C4C929.wem</Path>
 				</File>
+				<File Id="245728736" Language="SFX">
+					<ShortName>DC_Zombie_Roaring3.wav</ShortName>
+					<Path>SFX/DC_Zombie_Roaring3_0E94DD76.wem</Path>
+				</File>
 				<File Id="252314752" Language="SFX">
 					<ShortName>FS_Wet1.wav</ShortName>
 					<Path>SFX/FS_Wet1_AD9BA4FA.wem</Path>
@@ -98,6 +96,10 @@
 				<File Id="255237192" Language="SFX">
 					<ShortName>Landing3.wav</ShortName>
 					<Path>SFX/Landing3_10C4C929.wem</Path>
+				</File>
+				<File Id="262908911" Language="SFX">
+					<ShortName>FS_Zombie.wav</ShortName>
+					<Path>SFX/FS_Zombie_7A24F2C4.wem</Path>
 				</File>
 				<File Id="280838170" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet5.wav</ShortName>
@@ -107,9 +109,21 @@
 					<ShortName>Jump.wav</ShortName>
 					<Path>SFX/Jump_10C4C929.wem</Path>
 				</File>
+				<File Id="289706765" Language="SFX">
+					<ShortName>Dogs_Bark2.wav</ShortName>
+					<Path>SFX/Dogs_Bark2_10C4C929.wem</Path>
+				</File>
+				<File Id="308664535" Language="SFX">
+					<ShortName>EXPLOSION_Medium_Debris_stereo.wav</ShortName>
+					<Path>SFX/EXPLOSION_Medium_Debris_stereo_10C4C929.wem</Path>
+				</File>
 				<File Id="328943342" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep02.wav</ShortName>
 					<Path>SFX/Footsteps/Concrete/Footstep02_7AB6F5BE.wem</Path>
+				</File>
+				<File Id="339192588" Language="SFX">
+					<ShortName>Footstep_Send03.wav</ShortName>
+					<Path>SFX/Footstep_Send03_EF963E62.wem</Path>
 				</File>
 				<File Id="345654471" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep01.wav</ShortName>
@@ -118,6 +132,14 @@
 				<File Id="347832923" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep04.wav</ShortName>
 					<Path>SFX/Footsteps/Concrete/Footstep04_804F5F6F.wem</Path>
+				</File>
+				<File Id="356635317" Language="SFX">
+					<ShortName>DC_Zombie_Roaring3.wav</ShortName>
+					<Path>SFX/DC_Zombie_Roaring3_93BE3D84.wem</Path>
+				</File>
+				<File Id="356931039" Language="SFX">
+					<ShortName>Footstep_Send04.wav</ShortName>
+					<Path>SFX/Footstep_Send04_EB38DA24.wem</Path>
 				</File>
 				<File Id="369664790" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep03.wav</ShortName>
@@ -135,17 +157,37 @@
 					<ShortName>Footsteps\Wet\FS_Wet6.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet6_AEAA40FE.wem</Path>
 				</File>
+				<File Id="431563007" Language="SFX">
+					<ShortName>FS_Zombie.wav</ShortName>
+					<Path>SFX/FS_Zombie_A41AFA4F.wem</Path>
+				</File>
 				<File Id="433133940" Language="SFX">
 					<ShortName>M16_RiffleShot3.wav</ShortName>
 					<Path>SFX/M16_RiffleShot3_37D88494.wem</Path>
+				</File>
+				<File Id="435575158" Language="SFX">
+					<ShortName>FS_Zombie.wav</ShortName>
+					<Path>SFX/FS_Zombie_26ACA9BA.wem</Path>
 				</File>
 				<File Id="444859194" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet2.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet2_A8B00FCE.wem</Path>
 				</File>
+				<File Id="450914330" Language="SFX">
+					<ShortName>Footstep_Send02.wav</ShortName>
+					<Path>SFX/Footstep_Send02_ADD13745.wem</Path>
+				</File>
+				<File Id="455966689" Language="SFX">
+					<ShortName>Rain.wav</ShortName>
+					<Path>SFX/Rain_D79FB2B7.wem</Path>
+				</File>
 				<File Id="458132233" Language="SFX">
 					<ShortName>M16_RiffleShot5.wav</ShortName>
 					<Path>SFX/M16_RiffleShot5_A128D43B.wem</Path>
+				</File>
+				<File Id="460592943" Language="SFX">
+					<ShortName>Footstep_Send03.wav</ShortName>
+					<Path>SFX/Footstep_Send03_496452F3.wem</Path>
 				</File>
 				<File Id="470774498" Language="SFX">
 					<ShortName>CaseDrop2.wav</ShortName>
@@ -159,9 +201,17 @@
 					<ShortName>M16_RiffleShot4.wav</ShortName>
 					<Path>SFX/M16_RiffleShot4_9BAF07D9.wem</Path>
 				</File>
+				<File Id="521199292" Language="SFX">
+					<ShortName>Footstep_Send04.wav</ShortName>
+					<Path>SFX/Footstep_Send04_36CC8863.wem</Path>
+				</File>
 				<File Id="532015600" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet4.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet4_DC92C813.wem</Path>
+				</File>
+				<File Id="548816155" Language="SFX">
+					<ShortName>Footstep_Send01.wav</ShortName>
+					<Path>SFX/Footstep_Send01_32B0CF57.wem</Path>
 				</File>
 				<File Id="594762900" Language="SFX">
 					<ShortName>CaseDrop4.wav</ShortName>
@@ -171,6 +221,10 @@
 					<ShortName>Footsteps\Wet\FS_Wet3.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet3_884BFA31.wem</Path>
 				</File>
+				<File Id="615813681" Language="SFX">
+					<ShortName>Transformator.wav</ShortName>
+					<Path>SFX/Transformator_D79FB2B7.wem</Path>
+				</File>
 				<File Id="631541176" Language="SFX">
 					<ShortName>CaseDrop3.wav</ShortName>
 					<Path>SFX/CaseDrop3_8F049691.wem</Path>
@@ -178,6 +232,10 @@
 				<File Id="633276371" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet3.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet3_4CE95CF9.wem</Path>
+				</File>
+				<File Id="638527051" Language="SFX">
+					<ShortName>EXPLOSION_Medium_Fast_with_Rock_Debris_stereo.wav</ShortName>
+					<Path>SFX/EXPLOSION_Medium_Fast_with_Rock_Debris_stereo_10C4C929.wem</Path>
 				</File>
 				<File Id="648670622" Language="SFX">
 					<ShortName>CaseDrop1.wav</ShortName>
@@ -191,6 +249,10 @@
 					<ShortName>CaseDrop2.wav</ShortName>
 					<Path>SFX/CaseDrop2_3E8EF46C.wem</Path>
 				</File>
+				<File Id="682526831" Language="SFX">
+					<ShortName>FS_Zombie.wav</ShortName>
+					<Path>SFX/FS_Zombie_3F5345E8.wem</Path>
+				</File>
 				<File Id="692758138" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet5.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet5_E0077FCC.wem</Path>
@@ -203,17 +265,37 @@
 					<ShortName>CaseDrop4.wav</ShortName>
 					<Path>SFX/CaseDrop4_36E6AFE2.wem</Path>
 				</File>
+				<File Id="735352519" Language="SFX">
+					<ShortName>FS_Zombie.wav</ShortName>
+					<Path>SFX/FS_Zombie_7FBF52DE.wem</Path>
+				</File>
 				<File Id="747257247" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet2.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet2_4801DB24.wem</Path>
+				</File>
+				<File Id="774288649" Language="SFX">
+					<ShortName>Footstep_Send02.wav</ShortName>
+					<Path>SFX/Footstep_Send02_6CA520B9.wem</Path>
 				</File>
 				<File Id="780550850" Language="SFX">
 					<ShortName>Landing.wav</ShortName>
 					<Path>SFX/Landing_10C4C929.wem</Path>
 				</File>
+				<File Id="780846326" Language="SFX">
+					<ShortName>Thunder1.wav</ShortName>
+					<Path>SFX/Thunder1_10C4C929.wem</Path>
+				</File>
 				<File Id="799275385" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep01.wav</ShortName>
 					<Path>SFX/Footsteps/Concrete/Footstep01_2B544C24.wem</Path>
+				</File>
+				<File Id="822396454" Language="SFX">
+					<ShortName>DC_Zombie_Roaring4.wav</ShortName>
+					<Path>SFX/DC_Zombie_Roaring4_B2A6219D.wem</Path>
+				</File>
+				<File Id="874697341" Language="SFX">
+					<ShortName>Footstep_Send01.wav</ShortName>
+					<Path>SFX/Footstep_Send01_D07FA2F5.wem</Path>
 				</File>
 				<File Id="883380855" Language="SFX">
 					<ShortName>Jump2.wav</ShortName>
@@ -223,9 +305,21 @@
 					<ShortName>CaseDrop1.wav</ShortName>
 					<Path>SFX/CaseDrop1_DFA09826.wem</Path>
 				</File>
+				<File Id="951164114" Language="SFX">
+					<ShortName>EXPLOSION_Medium_Weak_Debris_stereo.wav</ShortName>
+					<Path>SFX/EXPLOSION_Medium_Weak_Debris_stereo_10C4C929.wem</Path>
+				</File>
+				<File Id="952050715" Language="SFX">
+					<ShortName>FS_Zombie.wav</ShortName>
+					<Path>SFX/FS_Zombie_353B6BB5.wem</Path>
+				</File>
 				<File Id="984751732" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep02.wav</ShortName>
 					<Path>SFX/Footsteps/Concrete/Footstep02_01E94577.wem</Path>
+				</File>
+				<File Id="986341138" Language="SFX">
+					<ShortName>Dogs_Bark1.wav</ShortName>
+					<Path>SFX/Dogs_Bark1_10C4C929.wem</Path>
 				</File>
 				<File Id="996462194" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep04.wav</ShortName>
@@ -236,6 +330,11 @@
 					<Path>SFX/Jump4_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="4253899978" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\IslandScene</ObjectPath>
+			<ShortName>IslandScene</ShortName>
+			<Path>IslandScene.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

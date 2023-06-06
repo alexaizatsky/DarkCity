@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D1CF987D-1F32-4151-8EE1-D8ED39F091D1}" SchemaVersion="94">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{D1CF987D-1F32-4151-8EE1-D8ED39F091D1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D1CF987D-1F32-4151-8EE1-D8ED39F091D1}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Tounel_Reverb" ID="{F97A258C-6B4C-4332-9022-6FC17783C9EC}">
+					<ChildrenList>
+						<State Name="None" ID="{BC6F9723-09CE-4CA1-91A0-59CB87174DBA}"/>
+						<State Name="On" ID="{63A8DB55-CE5E-4C73-9544-254E726477B7}"/>
+						<State Name="Off" ID="{D140F9D4-7966-4732-BF32-6DD7CC7B7594}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

@@ -3,20 +3,45 @@
 	<AudioObjects>
 		<WorkUnit Name="Zombies" ID="{D46275AF-FCD2-4B96-86F7-7DD2C15B8BF2}" OwnerID="{A0228D18-872F-4A7D-A50E-29E3DB487803}" PersistMode="Nested">
 			<ChildrenList>
-				<RandomSequenceContainer Name="Zombie Roaring" ID="{E8D1688A-96E7-47FA-A569-6CE6B2BD08DE}" ShortID="231585717">
+				<RandomSequenceContainer Name="Zombie Roaring" ID="{BFD61DE6-7890-4CA8-A49B-FFA1EE32F371}" ShortID="495761028">
 					<PropertyList>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B0D3FB0A-144C-4788-BA2A-362E707E332F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-505"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance" ID="{330B699D-3184-413E-9D42-889A8644394F}" WorkUnitID="{C8A5E0AC-A038-4A9C-B127-D32B022EE3AA}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="CityReverb" ID="{CCFF0B31-83C7-447E-88F4-BA1015598FB9}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Zombie Roaring1" ID="{BFD61DE6-7890-4CA8-A49B-FFA1EE32F371}" ShortID="495761028">
+						<Sound Name="DC_Zombie_Roaring2" ID="{46397CAB-F31C-42FE-84DD-C6BFB9B8EB5E}" ShortID="772165025">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
@@ -25,8 +50,323 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DC_Zombie_Roaring2" ID="{CB8D4666-7B96-407A-8A09-4F79F940959E}" ShortID="18806997">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0240880324255138"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>DC_Zombie_Roaring2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="DC_Zombie_Roaring2" ID="{CB8D4666-7B96-407A-8A09-4F79F940959E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DC_Zombie_Roaring3" ID="{3E3AD2BB-4FDF-4362-BC5B-C9080D4AE8DF}" ShortID="498271371">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DC_Zombie_Roaring3" ID="{6776FD3C-A681-4942-A4B2-06A4A6D77EF8}" ShortID="245728736">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0707757551336446"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.942733058380145"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>DC_Zombie_Roaring3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="DC_Zombie_Roaring3" ID="{6776FD3C-A681-4942-A4B2-06A4A6D77EF8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DC_Zombie_Roaring4" ID="{B32369FE-98AD-4E08-9A58-25FD3A74C7C1}" ShortID="406852728">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DC_Zombie_Roaring4" ID="{97AD77FA-BB20-408D-86D8-3A2B7EE8CDF2}" ShortID="822396454">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00871080139372826"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>DC_Zombie_Roaring4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="DC_Zombie_Roaring4" ID="{97AD77FA-BB20-408D-86D8-3A2B7EE8CDF2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DC_Zombie_Roaring1" ID="{893991CA-96BB-4656-BE35-A361AD220AE2}" ShortID="840191625">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DC_Zombie_Roaring1" ID="{3E3D9CF5-799F-477A-9B32-4006DD369AD0}" ShortID="6193926">
+									<Language>SFX</Language>
+									<AudioFile>DC_Zombie_Roaring1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="DC_Zombie_Roaring1" ID="{3E3D9CF5-799F-477A-9B32-4006DD369AD0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DC_Zombie_Roaring3_01" ID="{D0A6507B-3625-42E6-98D3-A61E9B596426}" ShortID="697487003">
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Distance" ID="{330B699D-3184-413E-9D42-889A8644394F}" WorkUnitID="{C8A5E0AC-A038-4A9C-B127-D32B022EE3AA}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DC_Zombie_Roaring3" ID="{B739DE9E-9C66-4F8B-A8FF-111F5452BD5D}" ShortID="356635317">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0254792718481121"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0707757551336446"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.628488705586764"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>DC_Zombie_Roaring3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="DC_Zombie_Roaring3" ID="{B739DE9E-9C66-4F8B-A8FF-111F5452BD5D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="FootstepsZombie" ID="{3487379B-CB9D-4A1D-A96E-3CC6A203C008}" ShortID="702233767">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E2CC39B9-855F-49BD-9AB4-46DCC7A3FB91}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="227"/>
+											<Property Name="Min" Type="Real64" Value="-202"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance" ID="{330B699D-3184-413E-9D42-889A8644394F}" WorkUnitID="{C8A5E0AC-A038-4A9C-B127-D32B022EE3AA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="CityReverb" ID="{CCFF0B31-83C7-447E-88F4-BA1015598FB9}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Heel" ID="{49CAE562-9187-4D8F-8028-E38370ED0C97}" ShortID="942920614">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E9943550-4412-4540-98A5-0227AFB39450}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="177"/>
+													<Property Name="Min" Type="Real64" Value="-227"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FS_Zombie" ID="{048AD0BF-A85C-4358-BD62-E1F165391BC7}" ShortID="231709562">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FS_Zombie" ID="{1E71368A-E50A-4AA2-A5FC-4147C51CBDEC}" ShortID="682526831">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00470838226240555"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.215297010914911"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FS_Zombie.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="67343330"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FS_Zombie" ID="{1E71368A-E50A-4AA2-A5FC-4147C51CBDEC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FS_Zombie_01" ID="{1BEEAFC2-5371-4D03-B6AF-A62A72455F7E}" ShortID="742375767">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FS_Zombie" ID="{94E42164-2CDB-4E70-8AB3-58E06CEF6A5D}" ShortID="735352519">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.97307540843767"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.33228251648986"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FS_Zombie.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="262908911"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FS_Zombie" ID="{94E42164-2CDB-4E70-8AB3-58E06CEF6A5D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FS_Zombie_02" ID="{278A1560-1CA2-48F2-9CDB-4BC38FED1460}" ShortID="1040999050">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FS_Zombie" ID="{594E674C-7A4B-4BFB-A73F-6E527041FDB6}" ShortID="952050715">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0333063572519539"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0111021190839846"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.98659260843158"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.25644937853464"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FS_Zombie.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="431563007"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FS_Zombie" ID="{594E674C-7A4B-4BFB-A73F-6E527041FDB6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FS_Zombie_03" ID="{2FD6463D-20E5-433E-A7B9-E4C84AACB465}" ShortID="289562566">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FS_Zombie" ID="{B8BDF8F2-920C-446D-9550-9D28F12C3C8B}" ShortID="86408245">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0302785065926869"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0151392532963435"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.9823398637126"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.317837938094"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FS_Zombie.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="435575158"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FS_Zombie" ID="{B8BDF8F2-920C-446D-9550-9D28F12C3C8B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Zombie Roaring2" ID="{8FE48FA1-C4D4-45E9-BF09-1155D385E5EA}" ShortID="160353157">
+						<RandomSequenceContainer Name="Toe" ID="{7C467DB0-0B52-4749-B0EC-E30D5132E609}" ShortID="71839443">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9C954FD6-FBAF-436D-86BC-9F6634950573}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="177"/>
+													<Property Name="Min" Type="Real64" Value="-177"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
@@ -35,8 +375,126 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FS_Zombie" ID="{A50FCA2C-502F-4FB9-BEA4-C4F15CB65477}" ShortID="238476356">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FS_Zombie" ID="{DE7B7C07-AFAF-450E-A856-C36891A6E67C}" ShortID="435575158">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0156671419781545"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.256941128441734"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.881533101045298"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FS_Zombie.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="682526831"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FS_Zombie" ID="{DE7B7C07-AFAF-450E-A856-C36891A6E67C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FS_Zombie_01" ID="{5F5FF4EC-B58E-42B5-A438-631112A8F577}" ShortID="656302718">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FS_Zombie" ID="{DF77234F-5B81-4524-9C34-5FAAA5BA2B13}" ShortID="431563007">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.137920840967428"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.23251721028437"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.83449477351918"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FS_Zombie.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="735352519"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FS_Zombie" ID="{DF77234F-5B81-4524-9C34-5FAAA5BA2B13}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FS_Zombie_02" ID="{67777987-7FE8-4719-A46F-C1F31A02363D}" ShortID="1040591242">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FS_Zombie" ID="{5B686CDB-0BEC-4518-A0C3-3257CA39BCB3}" ShortID="262908911">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0302785065926852"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.26547014422335"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.90592334494774"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FS_Zombie.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="952050715"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FS_Zombie" ID="{5B686CDB-0BEC-4518-A0C3-3257CA39BCB3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FS_Zombie_03" ID="{8ABB0F6B-9E0E-4CFA-A1EE-703356CDDB68}" ShortID="480578920">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FS_Zombie" ID="{79B401D4-287B-445F-B8B3-6DF0711E498D}" ShortID="67343330">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0305308274809555"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="10.3367876231151"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.8850174216028"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FS_Zombie.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="86408245"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FS_Zombie" ID="{79B401D4-287B-445F-B8B3-6DF0711E498D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<Playlist>
+						<ItemRef Name="Heel" ID="{49CAE562-9187-4D8F-8028-E38370ED0C97}"/>
+						<ItemRef Name="Toe" ID="{7C467DB0-0B52-4749-B0EC-E30D5132E609}"/>
+					</Playlist>
 				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>

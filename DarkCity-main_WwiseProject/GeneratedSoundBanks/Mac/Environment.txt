@@ -1,14 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1229948536	Environment			\Default Work Unit\Environment	
+	547487259	CityEnvironment			\Default Work Unit\CityEnvironment	
+	3503567413	BasementEnvironment			\Default Work Unit\BasementEnvironment	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	172800761	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dogs\Silence\Wwise Silence	
-	307169300	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Thunder_Hit\Silence\Wwise Silence	
+	172800761	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Environment\CityEnvironment\SoundFx's\Dogs\Silence\Wwise Silence	
+	307169300	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Environment\CityEnvironment\SoundFx's\Thunder_Hit\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	66504976	Thunder2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Thunder2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Thunder_Hit\Thunder\Thunder2		2053016
-	289706765	Dogs_Bark2	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Dogs_Bark2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dogs\Dogs\Dogs_Bark2		416072
-	455966689	Rain	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Rain_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Rain		2852616
-	780846326	Thunder1	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Thunder1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Thunder_Hit\Thunder\Thunder1		2257092
-	986341138	Dogs_Bark1	Y:\Documents\GitHub\Dark City\DarkCity-main_WwiseProject\.cache\Mac\SFX\Dogs_Bark1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dogs\Dogs\Dogs_Bark1		307228
+	58499595	BasementHumm	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Mac\SFX\TestScene_Envr_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\BasementEnvironment\BasementHumm		2116864
+	66504976	Thunder2	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Mac\SFX\Thunder2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\CityEnvironment\SoundFx's\Thunder_Hit\Thunder\Thunder2		2053016
+	289706765	Dogs_Bark2	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Mac\SFX\Dogs_Bark2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\CityEnvironment\SoundFx's\Dogs\Dogs\Dogs_Bark2		416072
+	455966689	Rain	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Mac\SFX\Rain_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\CityEnvironment\SoundFx's\Rain		2852616
+	615813681	Transformator	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Mac\SFX\Transformator_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\CityEnvironment\Transformator		420284
+	780846326	Thunder1	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Mac\SFX\Thunder1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\CityEnvironment\SoundFx's\Thunder_Hit\Thunder\Thunder1		2257092
+	986341138	Dogs_Bark1	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Mac\SFX\Dogs_Bark1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\CityEnvironment\SoundFx's\Dogs\Dogs\Dogs_Bark1		307228
 

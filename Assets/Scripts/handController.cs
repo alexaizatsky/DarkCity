@@ -12,6 +12,7 @@ public class handController : MonoBehaviour
     [SerializeField] private Transform gunPoint;
     [SerializeField] private int bulletPoolCount = 30;
     [SerializeField] private int fxPoolCount = 10;
+    
     public enum State
     {
         idle,

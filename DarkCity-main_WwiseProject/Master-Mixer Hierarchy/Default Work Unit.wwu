@@ -9,6 +9,54 @@
 							<ObjectRef Name="System" ID="{BBE77B78-33DD-41D9-ACEF-5B411C075597}" WorkUnitID="{C6792F5A-3FE4-427F-B612-6BB63B54DB09}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="World" ID="{D55158B2-8925-4A46-B256-88A20225A69C}">
+							<ChildrenList>
+								<Bus Name="AUX" ID="{3DCD3ABA-B355-4E43-A1CC-7D1CC1D2759D}">
+									<ChildrenList>
+										<AuxBus Name="CityReverb" ID="{CCFF0B31-83C7-447E-88F4-BA1015598FB9}">
+											<ReferenceList>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Let_The_Power_Fall" ID="{6C4D2827-F82F-4BE3-A8DF-F0F0FAE93630}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="PA_Announcement1" ID="{65E0ACE4-B404-4485-87A4-5907277D9858}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Reverb_Tounel" ID="{4D771D95-9317-47A7-A6A7-150CA311C0FF}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Tounel_Reverb" ID="{F97A258C-6B4C-4332-9022-6FC17783C9EC}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Off" ID="{D140F9D4-7966-4732-BF32-6DD7CC7B7594}"/>
+														<CustomState Name="" ID="{AF4D0762-9C2D-40A3-B69D-7CBF89D94C57}" ShortID="20754959">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="On" ID="{63A8DB55-CE5E-4C73-9544-254E726477B7}"/>
+														<CustomState Name="" ID="{692B9BD6-0482-46AF-9735-7E58EF056CC3}" ShortID="75659225"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
