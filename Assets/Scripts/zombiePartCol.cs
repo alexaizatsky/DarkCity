@@ -18,4 +18,9 @@ public class zombiePartCol : MonoBehaviour
         //print("ZOMBIE PART GET HIT "+myCol.gameObject.name+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
         myZombie.GetHit(myCol, _point, dir);
     }
+
+    public void GetExplosionHit()
+    {
+        myZombie.GetExplosionHit();
+    }
 }

@@ -100,7 +100,8 @@ MonoBehaviour:
   radius: 5
   force: 2500
   isActive: 0
-  explosionEffect: {fileID: 159918, guid: a0040bf7072bc2f4e82d887d50a9c5e2, type: 3}
+  explosionEffect: {fileID: 1854104233019004, guid: de9ee3788be08e3458df26109e3912f3,
+    type: 3}
   soundEvent:
     idInternal: 0
     valueGuidInternal: 

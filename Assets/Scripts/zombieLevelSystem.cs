@@ -55,6 +55,7 @@ public class zombieLevelSystem : MonoBehaviour
                 z.transform.position = spawnPoints[points[i]].position;
                 z.transform.rotation = spawnPoints[points[i]].rotation;
                 z.gameObject.SetActive(true);
+                z.GetComponent<zombie>().Init();
             }
         }
     }

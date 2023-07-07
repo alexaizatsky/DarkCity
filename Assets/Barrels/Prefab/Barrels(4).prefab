@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 109959209602287748}
   - component: {fileID: 3401811665317153367}
   - component: {fileID: 3991940056783996340}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Barrels(4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,8 @@ MonoBehaviour:
   radius: 5
   force: 2500
   isActive: 0
-  explosionEffect: {fileID: 159918, guid: a0040bf7072bc2f4e82d887d50a9c5e2, type: 3}
+  explosionEffect: {fileID: 1694630618085734, guid: 8ff98ab8d075102428bb824e859d45be,
+    type: 3}
   soundEvent:
     idInternal: 0
     valueGuidInternal: 

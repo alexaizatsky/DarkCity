@@ -44,10 +44,11 @@ public class zombiePoolSystem : MonoBehaviour
                 break;
             }
         }
-
+        print("GET ZOMBIE FROM POOL numb "+n);
         if (n < 0)
             return null;
         else
             return _pool[n];
+        
     }
 }

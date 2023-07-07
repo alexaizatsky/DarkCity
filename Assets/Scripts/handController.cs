@@ -12,7 +12,7 @@ public class handController : MonoBehaviour
     [SerializeField] private Transform gunPoint;
     [SerializeField] private int bulletPoolCount = 30;
     [SerializeField] private int fxPoolCount = 10;
-    
+    [SerializeField] private LayerMask raycastLayers;
     public enum State
     {
         idle,
@@ -117,8 +117,9 @@ public class handController : MonoBehaviour
     void RaycastShot()
     {
         RaycastHit hit;
-        if (Physics.Raycast(gunPoint.position, gunPoint.forward, out hit))
+        if (Physics.Raycast(gunPoint.position, gunPoint.forward, out hit, 100, raycastLayers))
         {
+            //print("RAYCAST "+hit.collider.gameObject.name+" layer "+hit.collider.gameObject.layer);
             if (hit.collider.gameObject.layer == 11)
             {
                 if (hit.collider.gameObject.GetComponent<zombiePartCol>() != null)
@@ -126,6 +127,13 @@ public class handController : MonoBehaviour
                     print("RAYCAST ZOMBIE HIT "+hit.collider.gameObject.name);
                     zombiePartCol col = hit.collider.gameObject.GetComponent<zombiePartCol>();
                     col.GetHit(hit.point, gunPoint.position);
+                }
+            }
+            else if (hit.collider.gameObject.layer == 12)
+            {
+                if (hit.collider.gameObject.GetComponent<Explosions>() != null)
+                {
+                    hit.collider.gameObject.GetComponent<Explosions>().GetBullet(); 
                 }
             }
         }

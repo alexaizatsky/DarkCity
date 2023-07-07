@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class Explosions : MonoBehaviour
@@ -15,25 +16,23 @@ public class Explosions : MonoBehaviour
 
     public AK.Wwise.Event soundEvent;
 
-    private void Update()
-    {
-        if (isActive)
-        {
-        ExplodeWithDelay();
+    private GameObject fxObj;
+  
 
-        }
-    }
-
-
-
+/*
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.GetComponent<bullet>())
         {
-            isActive = true;
+            ExplodeWithDelay();
         }
     }
-
+*/
+    public void GetBullet()
+    {
+       Explode();
+    }
+    
     public void ExplodeWithDelay()
     {
         if (isExploded) return;
@@ -48,6 +47,11 @@ public class Explosions : MonoBehaviour
 
         for (int i = 0; i < overlapedColliders.Length; i++)
         {
+            print("GET COLLIDER IN EXPLOSION "+overlapedColliders[i].gameObject.name);
+            if (overlapedColliders[i].GetComponent<zombiePartCol>() != null)
+            {
+                overlapedColliders[i].GetComponent<zombiePartCol>().GetExplosionHit(); 
+            }
             Rigidbody rigidbody = overlapedColliders[i].attachedRigidbody;
             if (rigidbody)
             {
@@ -59,7 +63,7 @@ public class Explosions : MonoBehaviour
                     if (Vector3.Distance(transform.position, rigidbody.position) <
                         radius / 2f)
                     {
-                    explosions.ExplodeWithDelay();
+                        explosions.ExplodeWithDelay();
 
                     }
                 }
@@ -67,8 +71,12 @@ public class Explosions : MonoBehaviour
         }
 
         Destroy(gameObject);
-        Instantiate(explosionEffect, transform.position, Quaternion.identity);
+        fxObj = Instantiate(explosionEffect, transform.position+new Vector3(0,.5f, 0), Quaternion.Euler(new Vector3(-90,0,0)));
         soundEvent.Post(gameObject);
+        DOVirtual.DelayedCall(5, () =>
+        {
+            if(fxObj!=null) Destroy(fxObj.gameObject);
+        });
     }
 
     private void OnDrawGizmosSelected()

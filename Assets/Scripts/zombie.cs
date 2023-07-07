@@ -12,6 +12,7 @@ public class zombie : MonoBehaviour
     [SerializeField] private RagdollUtility myRagdollUtility;
     [SerializeField] private HitReaction myHitReaction;
     [SerializeField] private ZombiePartContainer[] zombieParts;
+    [SerializeField] private Renderer[] allRenderParts;
     private Sequence seq;
     private Transform heroT;
 
@@ -29,22 +30,27 @@ public class zombie : MonoBehaviour
 
     public State myState;
 
- 
-    void Start()
-    {
-        Init();
-    }
+
     
     public void Init()
     {
+        
         for (int i = 0; i < zombieParts.Length; i++)
         {
             zombieParts[i].Init(this);
+        }
+        for (int i = 0; i < allRenderParts.Length; i++)
+        {
+            allRenderParts[i].gameObject.SetActive(true);
         }
         FindHero();
         SetState(State.move);
     }
 
+    public void DisableRagdoll()
+    {
+        myRagdollUtility.DisableRagdoll();
+    }
     void SetState(State s)
     {
         print("SetState "+s+" "+System.DateTime.UtcNow.ToString("HH:mm:ss.fff "));
@@ -112,9 +118,23 @@ public class zombie : MonoBehaviour
 
     void DelayDie()
     {
-        this.gameObject.SetActive(false);
+        
         myNavMesh.enabled = transform;
         myRagdollUtility.DisableRagdoll();
+        for (int i = 0; i < allRenderParts.Length; i++)
+        {
+            allRenderParts[i].enabled = false;
+        }
+        DOVirtual.DelayedCall(1, () =>
+        {
+            for (int i = 0; i < allRenderParts.Length; i++)
+            {
+                allRenderParts[i].enabled = true;
+            }
+            this.gameObject.SetActive(false);
+        });
+      
+
     }
     public void GetHitToZombiePart(Collider _col)
     {
@@ -134,12 +154,17 @@ public class zombie : MonoBehaviour
             if (zpc.partHealth <= 0)
             {
                 if(zpc.myType== ZombiePartContainer.partType.leg) SetState(State.crawl);
-                if(zpc.myType== ZombiePartContainer.partType.body) SetState(State.die);
+                if(zpc.myType== ZombiePartContainer.partType.head) SetState(State.die);
+                
                 zpc.DeactivatePart();
             }
         }
     }
 
+    public void GetExplosionHit()
+    {
+        SetState(State.die);
+    }
 
     void Update()
     {
@@ -183,6 +208,7 @@ public class ZombiePartContainer
     public zombiePartCol scriptChunk;
     public float partHealth;
     public ZombiePartContainer[] zombieParts;
+    
     public enum partType
     {
         body,
