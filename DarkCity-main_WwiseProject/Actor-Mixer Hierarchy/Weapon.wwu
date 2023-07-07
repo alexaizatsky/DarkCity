@@ -2,14 +2,16 @@
 <WwiseDocument Type="WorkUnit" ID="{F7D3385E-6B05-41EB-AC3A-CA817014FB03}" SchemaVersion="94" RootDocumentID="{A0228D18-872F-4A7D-A50E-29E3DB487803}">
 	<AudioObjects>
 		<WorkUnit Name="Weapon" ID="{F7D3385E-6B05-41EB-AC3A-CA817014FB03}" OwnerID="{A0228D18-872F-4A7D-A50E-29E3DB487803}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
-				<RandomSequenceContainer Name="Riffle_M16_Shot_Player" ID="{B4A854F4-3673-4D66-8B22-805A10A8B92A}" ShortID="992871019">
+				<SwitchContainer Name="M16Switch" ID="{C7B49C12-9409-44D2-BBB1-E086728AD1D2}" ShortID="240816900">
 					<PropertyList>
-						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-						<Property Name="Volume" Type="Real64">
+						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>-1</Value>
+								<Value>-96</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -17,182 +19,259 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
 						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb_Tounel" ID="{4D771D95-9317-47A7-A6A7-150CA311C0FF}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="M16_RiffleShot1" ID="{A43F738B-A3B6-4F24-82A5-684B8DE2CB32}" ShortID="55389885">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="M16_RiffleShot1" ID="{3B4C34CC-DCE8-424F-BF4C-75C7E44239C9}" ShortID="185288935">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.217763408604182"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.435526817208365"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>M16_RiffleShot1.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="M16_RiffleShot1" ID="{3B4C34CC-DCE8-424F-BF4C-75C7E44239C9}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="M16_RiffleShot2" ID="{074E40F2-5599-43E2-AB03-5EA2BEF258F6}" ShortID="832207286">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="M16_RiffleShot2" ID="{17DAFA11-7565-4A18-9463-1470E4319D04}" ShortID="179117578">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.130266203703704"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.443968490173847"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>M16_RiffleShot2.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="M16_RiffleShot2" ID="{17DAFA11-7565-4A18-9463-1470E4319D04}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="M16_RiffleShot3" ID="{20D2F6AA-15D3-4871-A2D8-ACD78CD7FF12}" ShortID="605920863">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="M16_RiffleShot3" ID="{C9823105-8CCA-4673-9764-7B2566A14463}" ShortID="433133940">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.13671875"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.388020833333333"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>M16_RiffleShot3.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="M16_RiffleShot3" ID="{C9823105-8CCA-4673-9764-7B2566A14463}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="M16_RiffleShot4" ID="{7571E4F7-EEF1-4A0A-B9E5-204422267ABE}" ShortID="894447065">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="M16_RiffleShot4" ID="{4D25583C-A98B-457C-853B-3B90B7E08006}" ShortID="505219137">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.126220946712018"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.447510629251701"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>M16_RiffleShot4.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="M16_RiffleShot4" ID="{4D25583C-A98B-457C-853B-3B90B7E08006}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="M16_RiffleShot5" ID="{97CDDF0C-65BE-4A99-8CAA-D9D7AAE51BFA}" ShortID="1069580317">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="M16_RiffleShot5" ID="{8308C4D3-5E87-4C04-A4BF-D1EA92C2C5FB}" ShortID="458132233">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.124131944444444"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.380208333333333"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>M16_RiffleShot5.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="M16_RiffleShot5" ID="{8308C4D3-5E87-4C04-A4BF-D1EA92C2C5FB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Case Drop" ID="{E2E90079-76B3-4B9A-860A-B3DD5173C77C}" ShortID="815376750">
-					<PropertyList>
-						<Property Name="Lowpass" Type="int16">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{8B330ADE-3CE0-4927-B15F-F62FDC8099F6}"/>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-6</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
-						</Reference>
-						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-							<ObjectRef Name="High_Freq_Cut_1" ID="{BA5BC68D-BCA7-4CE0-9878-1560F2D8B257}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Dry" ID="{FFB08503-E8BF-485B-9045-A7293DF25121}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb_Tounel" ID="{4D771D95-9317-47A7-A6A7-150CA311C0FF}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="WeaponEnvType" ID="{A84C264C-2914-4817-B9CC-3F26C683AF51}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Case_Drop1" ID="{209A17B9-9016-47FB-ACAE-CD2BA6A21AB1}" ShortID="159716097">
+						<BlendContainer Name="M16Tail" ID="{BE240F90-88E0-462D-8160-2C0A72E218C6}" ShortID="766471352">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Tail" ID="{BAEF387C-D8D7-4D00-8378-70A29FF51311}" ShortID="489215703">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.05</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Tail1" ID="{C4A94B58-6108-441A-B47B-F254B36B02FA}" ShortID="227950482">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tail1" ID="{4B5E0C7E-3C57-4B57-9A7B-0372FEEAD869}" ShortID="442161098">
+													<Language>SFX</Language>
+													<AudioFile>Tail1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tail1" ID="{4B5E0C7E-3C57-4B57-9A7B-0372FEEAD869}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Tail2" ID="{925FCCDA-511E-4441-A363-8D3DE932C164}" ShortID="273429121">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tail2" ID="{D2C2770D-E39E-4A9A-847D-DE41C556C32C}" ShortID="1060978808">
+													<Language>SFX</Language>
+													<AudioFile>Tail2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tail2" ID="{D2C2770D-E39E-4A9A-847D-DE41C556C32C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Riffle_M16_Shot_Player" ID="{B7508F6D-EE8C-4DAA-A2ED-31139DEF7C61}" ShortID="893969917">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Tounel" ID="{4D771D95-9317-47A7-A6A7-150CA311C0FF}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="M16_RiffleShot1" ID="{BC938A0C-5BDA-43C1-B8F7-A7FF0BA0A33A}" ShortID="1026171056">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot1" ID="{10D1BF8A-C096-4658-AAFB-31875D33D7F1}" ShortID="104406808">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.217763408604182"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.435526817208365"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="185288935"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot1" ID="{10D1BF8A-C096-4658-AAFB-31875D33D7F1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot2" ID="{FC085497-FC02-4ED1-8683-F22F280A0085}" ShortID="875400939">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot2" ID="{CE1941A8-44C0-415A-B164-0885162552D8}" ShortID="496971831">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.130266203703704"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.443968490173847"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="179117578"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot2" ID="{CE1941A8-44C0-415A-B164-0885162552D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot3" ID="{D0E6AE5C-C54A-4AD9-8312-217E581B78D7}" ShortID="243327085">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot3" ID="{2CFA96FC-E571-44D1-B3CA-88CB4ADB2CFC}" ShortID="1069912432">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.13671875"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.388020833333333"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="433133940"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot3" ID="{2CFA96FC-E571-44D1-B3CA-88CB4ADB2CFC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot4" ID="{2C0A575C-99A8-439F-B979-03BEEF90CA9F}" ShortID="1110922">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot4" ID="{567DF86B-7F9C-4DDE-95FF-582F5DA1AD04}" ShortID="340594443">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.126220946712018"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.447510629251701"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="505219137"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot4" ID="{567DF86B-7F9C-4DDE-95FF-582F5DA1AD04}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot5" ID="{90DB8BDD-A4EA-4BAA-BBBE-44E58E0D62D5}" ShortID="211692802">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot5" ID="{9BD24885-3130-44BB-AEAF-3AC58609A916}" ShortID="1039738462">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.124131944444444"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.380208333333333"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot5.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="458132233"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot5" ID="{9BD24885-3130-44BB-AEAF-3AC58609A916}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<RandomSequenceContainer Name="Riffle_M16_Dry" ID="{B4A854F4-3673-4D66-8B22-805A10A8B92A}" ShortID="992871019">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{19EC5A6E-8E51-4861-A5CD-31CB88163FF2}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -203,9 +282,12 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Tounel" ID="{4D771D95-9317-47A7-A6A7-150CA311C0FF}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="CaseDrop1" ID="{328BBFD1-E895-47FC-8649-46767A9E9DF5}" ShortID="108193999">
+								<Sound Name="M16_RiffleShot1" ID="{A43F738B-A3B6-4F24-82A5-684B8DE2CB32}" ShortID="55389885">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
@@ -215,24 +297,21 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CaseDrop1" ID="{E07469CC-28E0-4805-8D66-4B322BD6F5EB}" ShortID="936616754">
+										<AudioFileSource Name="M16_RiffleShot1" ID="{3B4C34CC-DCE8-424F-BF4C-75C7E44239C9}" ShortID="185288935">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0238715277777778"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.217763408604182"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.33203125"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.435526817208365"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>CaseDrop1.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="648670622"/>
-											</ConvertedFileIDList>
+											<AudioFile>M16_RiffleShot1.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="CaseDrop1" ID="{E07469CC-28E0-4805-8D66-4B322BD6F5EB}" Platform="Linked"/>
+										<ActiveSource Name="M16_RiffleShot1" ID="{3B4C34CC-DCE8-424F-BF4C-75C7E44239C9}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="CaseDrop2" ID="{C2E9640C-41C7-4970-BFFA-FF5092B0A149}" ShortID="235574733">
+								<Sound Name="M16_RiffleShot2" ID="{074E40F2-5599-43E2-AB03-5EA2BEF258F6}" ShortID="832207286">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
@@ -242,24 +321,21 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CaseDrop2" ID="{BC7A4EDC-EC61-4BFE-A975-2B09C6240341}" ShortID="470774498">
+										<AudioFileSource Name="M16_RiffleShot2" ID="{17DAFA11-7565-4A18-9463-1470E4319D04}" ShortID="179117578">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0108506944444444"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.130266203703704"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.316840277777778"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.443968490173847"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>CaseDrop2.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="660856220"/>
-											</ConvertedFileIDList>
+											<AudioFile>M16_RiffleShot2.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="CaseDrop2" ID="{BC7A4EDC-EC61-4BFE-A975-2B09C6240341}" Platform="Linked"/>
+										<ActiveSource Name="M16_RiffleShot2" ID="{17DAFA11-7565-4A18-9463-1470E4319D04}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="CaseDrop3" ID="{421AC534-D556-490D-8D5A-A62549D31A1E}" ShortID="220636898">
+								<Sound Name="M16_RiffleShot3" ID="{20D2F6AA-15D3-4871-A2D8-ACD78CD7FF12}" ShortID="605920863">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
@@ -269,24 +345,21 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CaseDrop3" ID="{E455F3EF-1890-41AB-9C15-3C7D2E7C2921}" ShortID="631541176">
+										<AudioFileSource Name="M16_RiffleShot3" ID="{C9823105-8CCA-4673-9764-7B2566A14463}" ShortID="433133940">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.00499133912824387"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.13671875"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.339411060720584"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.388020833333333"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>CaseDrop3.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="177491537"/>
-											</ConvertedFileIDList>
+											<AudioFile>M16_RiffleShot3.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="CaseDrop3" ID="{E455F3EF-1890-41AB-9C15-3C7D2E7C2921}" Platform="Linked"/>
+										<ActiveSource Name="M16_RiffleShot3" ID="{C9823105-8CCA-4673-9764-7B2566A14463}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="CaseDrop4" ID="{51D9DD90-63C3-46E5-BAF1-7C1E52475E3B}" ShortID="282151920">
+								<Sound Name="M16_RiffleShot4" ID="{7571E4F7-EEF1-4A0A-B9E5-204422267ABE}" ShortID="894447065">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
@@ -296,42 +369,49 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CaseDrop4" ID="{C0207DC3-9648-4191-BAC5-A4C0E0A21A26}" ShortID="594762900">
+										<AudioFileSource Name="M16_RiffleShot4" ID="{4D25583C-A98B-457C-853B-3B90B7E08006}" ShortID="505219137">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.00868055555555555"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.126220946712018"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.277777777777778"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.447510629251701"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>CaseDrop4.wav</AudioFile>
+											<AudioFile>M16_RiffleShot4.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="CaseDrop4" ID="{C0207DC3-9648-4191-BAC5-A4C0E0A21A26}" Platform="Linked"/>
+										<ActiveSource Name="M16_RiffleShot4" ID="{4D25583C-A98B-457C-853B-3B90B7E08006}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M16_RiffleShot5" ID="{97CDDF0C-65BE-4A99-8CAA-D9D7AAE51BFA}" ShortID="1069580317">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M16_RiffleShot5" ID="{8308C4D3-5E87-4C04-A4BF-D1EA92C2C5FB}" ShortID="458132233">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.124131944444444"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.380208333333333"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>M16_RiffleShot5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="M16_RiffleShot5" ID="{8308C4D3-5E87-4C04-A4BF-D1EA92C2C5FB}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Case_Drop2" ID="{2C5142E0-6F7F-46C4-8EBB-BBA3B99DE8D0}" ShortID="300854446">
+						<BlendContainer Name="M16CaseDrop" ID="{739E1D5C-29EE-4B01-A874-D20014B5AA30}" ShortID="586072406">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{8ADA6FCF-6FE6-4E0D-8CF7-0F1FEBFFCC6A}">
-												<PropertyList>
-													<Property Name="Max" Type="Real64" Value="101"/>
-													<Property Name="Min" Type="Real64" Value="-101"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -342,7 +422,17 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="CaseDrop1" ID="{1A479D84-4434-4283-8A88-A07AF5B8A6B3}" ShortID="520614032">
+								<RandomSequenceContainer Name="Riffle_M16_Dry" ID="{DE744C66-2A9F-4C3A-B7A8-AA09034A9E13}" ShortID="1059092591">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
@@ -350,112 +440,1283 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="CabinReverb" ID="{82D3B411-8B21-4A9E-B232-246A047EE317}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CaseDrop1" ID="{AD15369A-AD3E-4E1F-B040-252E9CE03D7F}" ShortID="648670622">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0151909722222222"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.668402777777778"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.451388888888889"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>CaseDrop1.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="936616754"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
+										<Sound Name="M16_RiffleShot1" ID="{2FBA3E13-411F-4709-883F-ABF96105E8E2}" ShortID="978771196">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot1" ID="{14C35045-6E20-4C8F-BB23-F649C1105F21}" ShortID="891088285">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.217763408604182"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.435526817208365"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="185288935"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot1" ID="{14C35045-6E20-4C8F-BB23-F649C1105F21}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot2" ID="{7DBF8FEC-C07D-498E-A610-9BE97831DAAA}" ShortID="221198429">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot2" ID="{CA0F3BB3-BBB8-4AFE-A712-8637364C44AE}" ShortID="339351796">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.130266203703704"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.443968490173847"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="179117578"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot2" ID="{CA0F3BB3-BBB8-4AFE-A712-8637364C44AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot3" ID="{9B0655E2-E979-4977-A5D1-8FA13982D4FF}" ShortID="995716111">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot3" ID="{72D9DDEE-8652-41D4-BA4D-EF201B913DB3}" ShortID="534528978">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.13671875"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.388020833333333"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="433133940"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot3" ID="{72D9DDEE-8652-41D4-BA4D-EF201B913DB3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot4" ID="{6CB22A71-0FA2-4A03-BEF7-CF372A9892C8}" ShortID="850617042">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot4" ID="{B71E3264-F966-404F-86B3-72BEB3D56614}" ShortID="469864295">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.126220946712018"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.447510629251701"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="505219137"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot4" ID="{B71E3264-F966-404F-86B3-72BEB3D56614}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot5" ID="{3AAB834B-D88D-4BC1-A25F-90E6CA2A63FE}" ShortID="1019669639">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot5" ID="{54FA2D3F-8FFD-4AFB-9B1A-85C0D1D872DF}" ShortID="417107015">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.124131944444444"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.380208333333333"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot5.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="458132233"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot5" ID="{54FA2D3F-8FFD-4AFB-9B1A-85C0D1D872DF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="CaseDrop1" ID="{AD15369A-AD3E-4E1F-B040-252E9CE03D7F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="CaseDrop2" ID="{15F0EED3-34E6-484D-8B6A-F204CF45A3F4}" ShortID="46507321">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Case Drop" ID="{E2E90079-76B3-4B9A-860A-B3DD5173C77C}" ShortID="815376750">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8B330ADE-3CE0-4927-B15F-F62FDC8099F6}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
 										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="CaseDrop2" ID="{8B700807-42B7-45C0-AFB5-CD97B13CFEAC}" ShortID="660856220">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0130208333333333"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.3515625"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>CaseDrop2.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="470774498"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="CaseDrop2" ID="{8B700807-42B7-45C0-AFB5-CD97B13CFEAC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="CaseDrop3" ID="{7803A0F5-D55A-48BA-9106-0466EF9EFC97}" ShortID="903630385">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="High_Freq_Cut_1" ID="{BA5BC68D-BCA7-4CE0-9878-1560F2D8B257}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="CaseDrop3" ID="{E4CB18D4-7905-4C0C-9673-EBA773B390DA}" ShortID="177491537">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0174696869488536"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.334419721592341"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>CaseDrop3.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="631541176"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="CaseDrop3" ID="{E4CB18D4-7905-4C0C-9673-EBA773B390DA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="CaseDrop4" ID="{F45261F4-60CF-4A17-8778-BBA9647C8EEE}" ShortID="564104438">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Tounel" ID="{4D771D95-9317-47A7-A6A7-150CA311C0FF}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CaseDrop4" ID="{4DE7B249-9640-4B8E-90AE-EEC15E368574}" ShortID="715785279">
+										<RandomSequenceContainer Name="Case_Drop1" ID="{209A17B9-9016-47FB-ACAE-CD2BA6A21AB1}" ShortID="159716097">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0130208333333333"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.275607638888889"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{19EC5A6E-8E51-4861-A5CD-31CB88163FF2}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>CaseDrop4.wav</AudioFile>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CaseDrop1" ID="{328BBFD1-E895-47FC-8649-46767A9E9DF5}" ShortID="108193999">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop1" ID="{E07469CC-28E0-4805-8D66-4B322BD6F5EB}" ShortID="936616754">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0238715277777778"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.33203125"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="648670622"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop1" ID="{E07469CC-28E0-4805-8D66-4B322BD6F5EB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop2" ID="{C2E9640C-41C7-4970-BFFA-FF5092B0A149}" ShortID="235574733">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop2" ID="{BC7A4EDC-EC61-4BFE-A975-2B09C6240341}" ShortID="470774498">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0108506944444444"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.316840277777778"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="660856220"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop2" ID="{BC7A4EDC-EC61-4BFE-A975-2B09C6240341}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop3" ID="{421AC534-D556-490D-8D5A-A62549D31A1E}" ShortID="220636898">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop3" ID="{E455F3EF-1890-41AB-9C15-3C7D2E7C2921}" ShortID="631541176">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00499133912824387"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.339411060720584"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="177491537"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop3" ID="{E455F3EF-1890-41AB-9C15-3C7D2E7C2921}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop4" ID="{51D9DD90-63C3-46E5-BAF1-7C1E52475E3B}" ShortID="282151920">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop4" ID="{C0207DC3-9648-4191-BAC5-A4C0E0A21A26}" ShortID="594762900">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00868055555555555"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.277777777777778"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop4" ID="{C0207DC3-9648-4191-BAC5-A4C0E0A21A26}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Case_Drop2" ID="{2C5142E0-6F7F-46C4-8EBB-BBA3B99DE8D0}" ShortID="300854446">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8ADA6FCF-6FE6-4E0D-8CF7-0F1FEBFFCC6A}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="101"/>
+																	<Property Name="Min" Type="Real64" Value="-101"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CaseDrop1" ID="{1A479D84-4434-4283-8A88-A07AF5B8A6B3}" ShortID="520614032">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop1" ID="{AD15369A-AD3E-4E1F-B040-252E9CE03D7F}" ShortID="648670622">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0151909722222222"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.668402777777778"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.451388888888889"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="936616754"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop1" ID="{AD15369A-AD3E-4E1F-B040-252E9CE03D7F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop2" ID="{15F0EED3-34E6-484D-8B6A-F204CF45A3F4}" ShortID="46507321">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop2" ID="{8B700807-42B7-45C0-AFB5-CD97B13CFEAC}" ShortID="660856220">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0130208333333333"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.3515625"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="470774498"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop2" ID="{8B700807-42B7-45C0-AFB5-CD97B13CFEAC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop3" ID="{7803A0F5-D55A-48BA-9106-0466EF9EFC97}" ShortID="903630385">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop3" ID="{E4CB18D4-7905-4C0C-9673-EBA773B390DA}" ShortID="177491537">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0174696869488536"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.334419721592341"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="631541176"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop3" ID="{E4CB18D4-7905-4C0C-9673-EBA773B390DA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop4" ID="{F45261F4-60CF-4A17-8778-BBA9647C8EEE}" ShortID="564104438">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop4" ID="{4DE7B249-9640-4B8E-90AE-EEC15E368574}" ShortID="715785279">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0130208333333333"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.275607638888889"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop4" ID="{4DE7B249-9640-4B8E-90AE-EEC15E368574}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="CaseDrop4" ID="{4DE7B249-9640-4B8E-90AE-EEC15E368574}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<PositioningInfo>
+										<Panner Name="" ID="{2F5CD331-650E-4878-B7BA-2D4411320B01}"/>
+									</PositioningInfo>
+									<Playlist>
+										<ItemRef Name="Case_Drop1" ID="{209A17B9-9016-47FB-ACAE-CD2BA6A21AB1}"/>
+										<ItemRef Name="Case_Drop2" ID="{2C5142E0-6F7F-46C4-8EBB-BBA3B99DE8D0}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
-						</RandomSequenceContainer>
+						</BlendContainer>
+						<BlendContainer Name="M16TailCaseDrop" ID="{315F000D-4422-483F-A38B-392E59F2332E}" ShortID="725596274">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Case Drop" ID="{B57875D5-7987-4713-8A64-A0076556F74C}" ShortID="816758438">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Tounel" ID="{4D771D95-9317-47A7-A6A7-150CA311C0FF}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Case_Drop1" ID="{110C01CF-07D9-4D60-AB9A-5FE8AF668834}" ShortID="446872437">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CaseDrop1" ID="{51C0B918-6760-410B-9729-0B69BD7C0045}" ShortID="1030062723">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop1" ID="{A8E38BFC-5713-4676-B559-7FE9DF1CE019}" ShortID="387414099">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0238715277777778"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.33203125"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="648670622"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop1" ID="{A8E38BFC-5713-4676-B559-7FE9DF1CE019}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop2" ID="{3C824C6E-C0A7-4AAB-B4F5-D2CE3ABF3960}" ShortID="399700237">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop2" ID="{1BAC78DB-8D5B-43F9-AD0A-D2D78C857FF9}" ShortID="503788644">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0108506944444444"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.316840277777778"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="660856220"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop2" ID="{1BAC78DB-8D5B-43F9-AD0A-D2D78C857FF9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop3" ID="{ECE1F098-B36D-4D3B-980D-A6E882B04C9A}" ShortID="334280635">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop3" ID="{9A782D38-D84A-4963-B813-C7C278E63BF3}" ShortID="723818215">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00499133912824387"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.339411060720584"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="177491537"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop3" ID="{9A782D38-D84A-4963-B813-C7C278E63BF3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop4" ID="{84E87133-0210-4384-B1AE-FE71C0258DCF}" ShortID="654006899">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop4" ID="{0EDE71B6-9A3E-4B7F-A524-E9E72C59D2B0}" ShortID="754329424">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00868055555555555"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.277777777777778"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop4.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="594762900"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop4" ID="{0EDE71B6-9A3E-4B7F-A524-E9E72C59D2B0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Case_Drop2" ID="{7F874706-8B39-4ADB-9A63-F96B70EC2682}" ShortID="601099169">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CaseDrop1" ID="{E8FF5C4C-C2FC-460C-94F9-99D86E7B84DE}" ShortID="260994933">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop1" ID="{17D64B77-E34D-4B38-A460-21E4321E1938}" ShortID="385375952">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0151909722222222"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.668402777777778"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.451388888888889"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="936616754"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop1" ID="{17D64B77-E34D-4B38-A460-21E4321E1938}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop2" ID="{2D9F45DB-E174-4D31-964D-EF06ECD2A5E1}" ShortID="41145845">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop2" ID="{88C5A2EE-D7A9-47A3-BCC5-19C65C82F6E7}" ShortID="294443961">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0130208333333333"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.3515625"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="470774498"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop2" ID="{88C5A2EE-D7A9-47A3-BCC5-19C65C82F6E7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop3" ID="{FA185A0C-18B7-4965-BF8D-97CC36B2143C}" ShortID="829526749">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop3" ID="{E3EDFE53-A4E5-4AE1-A1C2-D22A498BFF8C}" ShortID="266012052">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0174696869488536"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.334419721592341"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="631541176"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop3" ID="{E3EDFE53-A4E5-4AE1-A1C2-D22A498BFF8C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CaseDrop4" ID="{8865B934-7FCB-48F4-80E2-C47ED443A902}" ShortID="311816176">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CaseDrop4" ID="{40B4E8AB-3DF3-43A8-A91C-417E5108D279}" ShortID="507391367">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0130208333333333"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.275607638888889"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CaseDrop4.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="715785279"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CaseDrop4" ID="{40B4E8AB-3DF3-43A8-A91C-417E5108D279}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{D1095762-DCCD-4579-B6BE-700C709FC368}"/>
+									</PositioningInfo>
+									<Playlist>
+										<ItemRef Name="Case_Drop1" ID="{110C01CF-07D9-4D60-AB9A-5FE8AF668834}"/>
+										<ItemRef Name="Case_Drop2" ID="{7F874706-8B39-4ADB-9A63-F96B70EC2682}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<BlendContainer Name="M16Tail" ID="{47A60151-3C55-4343-A6BF-B8B27706C1B5}" ShortID="232880147">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Tail" ID="{616D70A3-5256-499E-9019-1E17F62570A9}" ShortID="552225645">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.05</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Tail1" ID="{6E508C79-5E16-44A9-9843-964D194233D4}" ShortID="34734508">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tail1" ID="{E3E8700B-57E7-4ACA-88C9-96769E97C087}" ShortID="628714326">
+															<Language>SFX</Language>
+															<AudioFile>Tail1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="442161098"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tail1" ID="{E3E8700B-57E7-4ACA-88C9-96769E97C087}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tail2" ID="{17134BC9-946E-4434-8150-844C2BDC6197}" ShortID="968947055">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tail2" ID="{185FFDD9-28E2-4979-B7EE-CD7512D8C8D9}" ShortID="228766136">
+															<Language>SFX</Language>
+															<AudioFile>Tail2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="1060978808"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tail2" ID="{185FFDD9-28E2-4979-B7EE-CD7512D8C8D9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Riffle_M16_Shot_Player" ID="{ABD3E83A-1A17-47A8-B1F3-CD909DD12F12}" ShortID="69607907">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_Tounel" ID="{4D771D95-9317-47A7-A6A7-150CA311C0FF}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="M16_RiffleShot1" ID="{50A5D262-93B2-40CD-8DA2-CB904EE0446F}" ShortID="259484360">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="M16_RiffleShot1" ID="{AC65780A-C3B9-4B9A-9852-9CE92437B4C6}" ShortID="146294333">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.217763408604182"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.435526817208365"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>M16_RiffleShot1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="185288935"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="M16_RiffleShot1" ID="{AC65780A-C3B9-4B9A-9852-9CE92437B4C6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="M16_RiffleShot2" ID="{599ED40F-756A-44BF-BA48-4D45A264982D}" ShortID="636418203">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="M16_RiffleShot2" ID="{512F5456-6105-461B-9787-060D9FFA396D}" ShortID="1032502827">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.130266203703704"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.443968490173847"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>M16_RiffleShot2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="179117578"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="M16_RiffleShot2" ID="{512F5456-6105-461B-9787-060D9FFA396D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="M16_RiffleShot3" ID="{85A41EF8-DF76-4BAB-9A39-0D490715B825}" ShortID="1014570407">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="M16_RiffleShot3" ID="{CFBE8C40-6E85-48E2-8561-9A036B60543A}" ShortID="557757538">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.13671875"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.388020833333333"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>M16_RiffleShot3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="433133940"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="M16_RiffleShot3" ID="{CFBE8C40-6E85-48E2-8561-9A036B60543A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="M16_RiffleShot4" ID="{3D0B73A3-150A-45BB-8C40-6DB02453AEE8}" ShortID="346668266">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="M16_RiffleShot4" ID="{620E8C88-DBBF-4D0A-A574-93E4F73AF12E}" ShortID="852157885">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.126220946712018"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.447510629251701"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>M16_RiffleShot4.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="505219137"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="M16_RiffleShot4" ID="{620E8C88-DBBF-4D0A-A574-93E4F73AF12E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="M16_RiffleShot5" ID="{163AC414-9CCB-47F0-A864-6D96CC6B5AE9}" ShortID="318433425">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="M16_RiffleShot5" ID="{6421940B-C1CB-4864-A1A4-21AC2E111431}" ShortID="523167445">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.124131944444444"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.380208333333333"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>M16_RiffleShot5.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="458132233"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="M16_RiffleShot5" ID="{6421940B-C1CB-4864-A1A4-21AC2E111431}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="MontainTail" ID="{CA58765D-9267-4D0A-BC6A-C52CA70F38CD}" ShortID="959689545">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Mountain" ID="{870E4848-B17E-4825-883A-E81C989AF7D6}" ShortID="741813239">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{24EBE2B0-6526-46EC-8C26-944B35880BEE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="126"/>
+															<Property Name="Min" Type="Real64" Value="-152"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MontainTail1" ID="{146C08ED-3341-4A87-9C41-CF419D9AD4B4}" ShortID="1011960462">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0156794425087101"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0039198606271777"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MontainTail1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MontainTail1" ID="{146C08ED-3341-4A87-9C41-CF419D9AD4B4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Riffle_M16_Dry" ID="{245F3A7F-0855-4B32-8053-5E99542F952C}" ShortID="435085825">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="M16_RiffleShot1" ID="{D46A35F0-59CE-43D8-AE4F-72DBB5CD8EB6}" ShortID="538621309">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot1" ID="{82055255-334A-491D-BC74-0EDD3CAD98B3}" ShortID="245275562">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.217763408604182"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.435526817208365"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="185288935"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot1" ID="{82055255-334A-491D-BC74-0EDD3CAD98B3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot2" ID="{4D813C99-1AB8-4680-9888-36CE87E476C8}" ShortID="120907633">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot2" ID="{6494683E-24AC-4D94-964B-5B3B1CE23DD9}" ShortID="878589205">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.130266203703704"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.443968490173847"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="179117578"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot2" ID="{6494683E-24AC-4D94-964B-5B3B1CE23DD9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot3" ID="{C020A4F6-4E26-4ABE-8A7B-19AB83443F93}" ShortID="596692727">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot3" ID="{95AC8F13-CA54-408A-8821-F6AA62226536}" ShortID="88772839">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.13671875"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.388020833333333"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot3.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="433133940"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot3" ID="{95AC8F13-CA54-408A-8821-F6AA62226536}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot4" ID="{DEE880FB-075D-4EDB-80F8-32BA386FD138}" ShortID="889585607">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot4" ID="{C32834C2-7A2A-411F-ABD1-81307CCB27F9}" ShortID="677316626">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.126220946712018"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.447510629251701"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot4.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="505219137"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot4" ID="{C32834C2-7A2A-411F-ABD1-81307CCB27F9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="M16_RiffleShot5" ID="{2DF055FB-A0E5-49B1-8B4D-560E2587AB0E}" ShortID="667852604">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="M16_RiffleShot5" ID="{8B63CBEE-476C-4F46-A2DD-E6CE252AB32D}" ShortID="804372989">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.124131944444444"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.380208333333333"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>M16_RiffleShot5.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="458132233"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="M16_RiffleShot5" ID="{8B63CBEE-476C-4F46-A2DD-E6CE252AB32D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
-					<Playlist>
-						<ItemRef Name="Case_Drop1" ID="{209A17B9-9016-47FB-ACAE-CD2BA6A21AB1}"/>
-						<ItemRef Name="Case_Drop2" ID="{2C5142E0-6F7F-46C4-8EBB-BBA3B99DE8D0}"/>
-					</Playlist>
-				</RandomSequenceContainer>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="M16TailCaseDrop" ID="{315F000D-4422-483F-A38B-392E59F2332E}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="M16CaseDrop" ID="{739E1D5C-29EE-4B01-A874-D20014B5AA30}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="MontainTail" ID="{CA58765D-9267-4D0A-BC6A-C52CA70F38CD}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="M16Tail" ID="{BE240F90-88E0-462D-8160-2C0A72E218C6}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Riffle_M16_Dry" ID="{B4A854F4-3673-4D66-8B22-805A10A8B92A}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Dry" ID="{FFB08503-E8BF-485B-9045-A7293DF25121}"/>
+								<ItemList>
+									<ItemRef Name="Riffle_M16_Dry" ID="{B4A854F4-3673-4D66-8B22-805A10A8B92A}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="TailCaseDrop" ID="{85A8DE1D-9084-401F-ADFF-72899D9DAC80}"/>
+								<ItemList>
+									<ItemRef Name="M16TailCaseDrop" ID="{315F000D-4422-483F-A38B-392E59F2332E}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Tail" ID="{6091BE7D-043E-4BD3-9276-183CE7B25FBB}"/>
+								<ItemList>
+									<ItemRef Name="M16Tail" ID="{BE240F90-88E0-462D-8160-2C0A72E218C6}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="CaseDrop" ID="{1F7A49EB-9D6A-4F0E-B06C-7E01C48D31DD}"/>
+								<ItemList>
+									<ItemRef Name="M16CaseDrop" ID="{739E1D5C-29EE-4B01-A874-D20014B5AA30}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Mountain" ID="{95C679EF-AF70-45F0-8A95-9A00B4B33A8E}"/>
+								<ItemList>
+									<ItemRef Name="MontainTail" ID="{CA58765D-9267-4D0A-BC6A-C52CA70F38CD}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

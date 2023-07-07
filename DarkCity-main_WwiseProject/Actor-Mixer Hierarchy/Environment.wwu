@@ -2,9 +2,14 @@
 <WwiseDocument Type="WorkUnit" ID="{C63418B5-29C0-4CEF-8A11-47BDC035D22A}" SchemaVersion="94" RootDocumentID="{A0228D18-872F-4A7D-A50E-29E3DB487803}">
 	<AudioObjects>
 		<WorkUnit Name="Environment" ID="{C63418B5-29C0-4CEF-8A11-47BDC035D22A}" OwnerID="{A0228D18-872F-4A7D-A50E-29E3DB487803}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="5"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<WorkUnit Name="CityEnvironment" ID="{888731D0-027D-40D9-9DED-966DDA3B0E11}" PersistMode="Reference"/>
 				<WorkUnit Name="BasementEnvironment" ID="{2425E86F-DFF3-4AD1-884F-0E07ABFD709E}" PersistMode="Reference"/>
+				<WorkUnit Name="IslandEnvironment" ID="{66F5FD19-8C86-4234-8F3B-1FD8962092E0}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

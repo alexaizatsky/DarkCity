@@ -4,10 +4,28 @@
 		<WorkUnit Name="Default Work Unit" ID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchGroup Name="Ground_Type" ID="{5918D19D-70AB-48DD-BB7A-BDE613D8D337}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="8"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Switch Name="Dry" ID="{41B6B2DD-831A-4B8C-B21B-D71FD63BDB33}"/>
 						<Switch Name="Wet" ID="{BD553443-BB8B-4F2A-90DF-E3C858890B24}"/>
 						<Switch Name="Sand" ID="{10464C44-5B79-451A-B90D-01D544158C7F}"/>
+						<Switch Name="Wood" ID="{B1C18B77-05D9-40E4-A4DB-E4AC19BD7B92}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="WeaponEnvType" ID="{A84C264C-2914-4817-B9CC-3F26C683AF51}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Dry" ID="{FFB08503-E8BF-485B-9045-A7293DF25121}"/>
+						<Switch Name="Tail" ID="{6091BE7D-043E-4BD3-9276-183CE7B25FBB}"/>
+						<Switch Name="CaseDrop" ID="{1F7A49EB-9D6A-4F0E-B06C-7E01C48D31DD}"/>
+						<Switch Name="TailCaseDrop" ID="{85A8DE1D-9084-401F-ADFF-72899D9DAC80}"/>
+						<Switch Name="Mountain" ID="{95C679EF-AF70-45F0-8A95-9A00B4B33A8E}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

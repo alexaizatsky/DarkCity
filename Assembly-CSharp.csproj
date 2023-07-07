@@ -178,6 +178,7 @@
     <Compile Include="Assets/PostProcessing/Runtime/Components/GrainComponent.cs" />
     <Compile Include="Assets/Wwise/Deployment/API/Handwritten/Common/Arrays/AkAuxSendArray.cs" />
     <Compile Include="Assets/Wwise/Deployment/API/Handwritten/Common/WwiseTypes/AkWwiseBaseType.cs" />
+    <Compile Include="Assets/Scripts/PlayerDefoltFootsteps.cs" />
     <Compile Include="Assets/Wwise/Deployment/API/Generated/Common/AkFloorPlane.cs" />
     <Compile Include="Assets/Wwise/Deployment/API/Handwritten/Common/Timeline/AkTimelineEventTrack.cs" />
     <Compile Include="Assets/Wwise/Deployment/API/Generated/Common/AkMemSettings.cs" />
@@ -307,6 +308,7 @@
     <Compile Include="Assets/Wwise/Deployment/API/Handwritten/Common/AkCallbackManager.cs" />
     <Compile Include="Assets/Wwise/Deployment/Components/AkEvent.cs" />
     <Compile Include="Assets/Wwise/Deployment/Components/AkTriggerMouseExit.cs" />
+    <Compile Include="Assets/Scripts/SurfaceTrigger.cs" />
     <Compile Include="Assets/Wwise/Deployment/Components/AkRTPCTrack.cs" />
     <Compile Include="Assets/Wwise/Deployment/API/Handwritten/WAAPI/AkWaapiClient.cs" />
     <Compile Include="Assets/Wwise/Deployment/API/Generated/Common/AkDiffractionFlags.cs" />

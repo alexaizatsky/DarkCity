@@ -13,6 +13,10 @@
 						<Bus Name="World" ID="{D55158B2-8925-4A46-B256-88A20225A69C}">
 							<ChildrenList>
 								<Bus Name="AUX" ID="{3DCD3ABA-B355-4E43-A1CC-7D1CC1D2759D}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="26"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
 									<ChildrenList>
 										<AuxBus Name="CityReverb" ID="{CCFF0B31-83C7-447E-88F4-BA1015598FB9}">
 											<ReferenceList>
@@ -48,6 +52,34 @@
 													<CustomState>
 														<StateRef Name="On" ID="{63A8DB55-CE5E-4C73-9544-254E726477B7}"/>
 														<CustomState Name="" ID="{692B9BD6-0482-46AF-9735-7E58EF056CC3}" ShortID="75659225"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+										</AuxBus>
+										<AuxBus Name="CabinReverb" ID="{82D3B411-8B21-4A9E-B232-246A047EE317}">
+											<ReferenceList>
+												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="CabinReverb" ID="{210C190D-E19A-4991-968D-A169155B002F}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Off" ID="{85ECD563-12CE-4618-93A5-F6A5CF179FC7}"/>
+														<CustomState Name="" ID="{8B954B42-888B-45F3-BEFC-4AB482946F60}" ShortID="557778572">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="On" ID="{9F67A117-678F-4A1A-A32C-2DABDB39E8B5}"/>
+														<CustomState Name="" ID="{3045AA8E-81CB-4F54-80E1-873816A6574D}" ShortID="239868136"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>

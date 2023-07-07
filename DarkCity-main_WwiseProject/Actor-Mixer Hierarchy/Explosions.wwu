@@ -6,14 +6,20 @@
 				<BlendContainer Name="BarrelMix" ID="{06E1A98F-E100-4470-AF6C-45FA55545B47}" ShortID="737195350">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="UserAuxSendVolume0" Type="Real64">
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>1</Value>
 							</ValueList>
 						</Property>
-						<Property Name="Volume" Type="Real64">
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
-								<Value>-1</Value>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -28,7 +34,7 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="CityReverb" ID="{CCFF0B31-83C7-447E-88F4-BA1015598FB9}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+							<ObjectRef Name="Reverb_Tounel" ID="{4D771D95-9317-47A7-A6A7-150CA311C0FF}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -47,9 +53,16 @@
 									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{21207E44-F22E-46EA-9F1E-D7C07CD204B0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -72,6 +85,11 @@
 						</Sound>
 						<Sound Name="EXPLOSION_Medium_Weak_Debris_stereo" ID="{79713118-456A-498A-9618-DD70D9AFDD1A}" ShortID="1046665081">
 							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -117,8 +135,8 @@
 											<Modifier Name="" ID="{D94CE39F-C131-4BC5-9D8C-5CCA1A222670}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="126"/>
-													<Property Name="Min" Type="Real64" Value="-152"/>
+													<Property Name="Max" Type="Real64" Value="202"/>
+													<Property Name="Min" Type="Real64" Value="-429"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -128,6 +146,16 @@
 									<ValueList>
 										<Value>-6</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{35B2E1F0-3D5D-4231-BC4F-9200DE2E70B8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>

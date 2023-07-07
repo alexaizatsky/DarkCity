@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4A96DC33-35A2-40AD-8A0C-6F637CE9279C}" SchemaVersion="94" RootDocumentID="{A0228D18-872F-4A7D-A50E-29E3DB487803}">
+	<AudioObjects>
+		<WorkUnit Name="Emiters" ID="{4A96DC33-35A2-40AD-8A0C-6F637CE9279C}" OwnerID="{66F5FD19-8C86-4234-8F3B-1FD8962092E0}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="Sea" ID="{0949D362-1007-46EA-93E4-8E02CBC22D3C}" ShortID="506897626">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="BypassEffect0" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{35A64B76-74F3-4388-AFDE-3B48075A5FC9}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="MakeUpGain" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Sea" ID="{DAE0C4D8-BE84-4BD7-B6D3-3FB8852C0CE7}" WorkUnitID="{C8A5E0AC-A038-4A9C-B127-D32B022EE3AA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Sea" ID="{C99C29DD-E262-4B8A-ABDF-5BB4E43EF7F5}" ShortID="394533736">
+							<Language>SFX</Language>
+							<AudioFile>Sea.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="InsideFilter" ID="{1F79AA94-AC7A-4AF2-B5AC-FB4C802D3120}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Off" ID="{56D90CB1-F4DA-492F-8696-65BDC53C14D5}"/>
+								<CustomState Name="" ID="{C4F0BA4F-E5A5-4257-A239-DE863A186232}" ShortID="347392499"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="On" ID="{E5825D15-861E-497A-8DE8-D0980284DD2C}"/>
+								<CustomState Name="" ID="{0FF36BA2-C428-4FE4-A57A-411943CC1DBE}" ShortID="686634156">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="36"/>
+										<Property Name="Volume" Type="Real64" Value="-3"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="Sea" ID="{C99C29DD-E262-4B8A-ABDF-5BB4E43EF7F5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

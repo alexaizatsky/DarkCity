@@ -4,15 +4,16 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Environment" Hash="1180543099" Timestamp="1686066500"/>
-				<File Name="Init" Hash="289142317" Timestamp="1686064548"/>
-				<File Name="IslandScene" Hash="4293780726" Timestamp="1685637333"/>
-				<File Name="Main" Hash="221710866" Timestamp="1686069916"/>
+				<File Name="Init" Hash="4187566982" Timestamp="1686675246"/>
+				<File Name="IslandScene" Hash="3957456354" Timestamp="1686675590"/>
+				<File Name="Main" Hash="2500051119" Timestamp="1686675502"/>
 				<File Name="Objects" Hash="1396380388" Timestamp="1686066500"/>
+				<File Name="Test_Scene" Hash="1165617830" Timestamp="1686675502"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="878586047" Timestamp="1686069916"/>
+				<File Name="" Hash="3783862352" Timestamp="1686675590"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -20,15 +21,16 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Environment" Hash="1180543099" Timestamp="1686066499"/>
-				<File Name="Init" Hash="3606181179" Timestamp="1686064548"/>
-				<File Name="IslandScene" Hash="4293780726" Timestamp="1685637332"/>
-				<File Name="Main" Hash="221710866" Timestamp="1686069916"/>
+				<File Name="Init" Hash="2914652312" Timestamp="1686675244"/>
+				<File Name="IslandScene" Hash="3957456354" Timestamp="1686675590"/>
+				<File Name="Main" Hash="2500051119" Timestamp="1686675501"/>
 				<File Name="Objects" Hash="1396380388" Timestamp="1686066499"/>
+				<File Name="Test_Scene" Hash="1165617830" Timestamp="1686675501"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="730360105" Timestamp="1686069916"/>
+				<File Name="" Hash="4029119594" Timestamp="1686675590"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

@@ -5,17 +5,20 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{0FD0941B-E931-4AEB-BD5D-8AB0FFF6D345}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Weapons" ID="{CE73F963-E893-4014-9A23-E166B39CF27E}" WorkUnitID="{CE73F963-E893-4014-9A23-E166B39CF27E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ZombieRoaring" ID="{70606619-A6EC-4532-ACD9-6C35ACC33090}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Footsteps" ID="{EA371A67-B6C6-4846-B3C7-4C12114145C6}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Weapon" ID="{EA30E1B9-9D63-48ED-B548-44C50D56DF45}" WorkUnitID="{EA30E1B9-9D63-48ED-B548-44C50D56DF45}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Landing" ID="{6C55AE61-9562-4920-A77B-2756A21E300B}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ZombieFootsteps" ID="{5EDA9281-E855-4A60-A6DC-2EE0CA88A4FB}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Footsteps" ID="{A2E71B5F-6406-4B1F-80E1-919D7D85A6E0}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BarrelExplosion" ID="{99139DA8-BBB4-4C2A-944F-B3286A849828}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="CityEnvironment" ID="{C047E29C-3739-4E2F-8FE7-7E0989D9212D}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="CitySounds" ID="{C047E29C-3739-4E2F-8FE7-7E0989D9212D}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Jump" ID="{63A7C97C-64D5-4E9A-A456-8FF733663E0E}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
+					<GameSyncExclusionList>
+						<GameSyncRef Name="Wood" ID="{B1C18B77-05D9-40E4-A4DB-E4AC19BD7B92}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" Origin="Manual"/>
+						<GameSyncRef Name="Sand" ID="{10464C44-5B79-451A-B90D-01D544158C7F}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" Origin="Manual"/>
+					</GameSyncExclusionList>
 				</SoundBank>
 				<SoundBank Name="Objects" ID="{29AC3EF1-9F1D-47A6-9899-060705F81225}">
 					<ObjectInclusionList>
@@ -25,9 +28,40 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="IslandScene" ID="{0C510675-3333-44FF-B56E-EDBF3F41A0C4}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Weapons" ID="{CE73F963-E893-4014-9A23-E166B39CF27E}" WorkUnitID="{CE73F963-E893-4014-9A23-E166B39CF27E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Landing" ID="{6C55AE61-9562-4920-A77B-2756A21E300B}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Footsteps" ID="{A2E71B5F-6406-4B1F-80E1-919D7D85A6E0}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="BarrelExplosion" ID="{99139DA8-BBB4-4C2A-944F-B3286A849828}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Sea" ID="{F9CE6E8D-20C9-4DAF-A765-9719B24B9098}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Jump" ID="{63A7C97C-64D5-4E9A-A456-8FF733663E0E}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="IslandAmbience" ID="{F422EC96-9769-4FE3-8E2A-B705B7B4E998}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
+					<GameSyncExclusionList>
+						<GameSyncRef Name="Dry" ID="{41B6B2DD-831A-4B8C-B21B-D71FD63BDB33}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" Origin="Manual"/>
+						<GameSyncRef Name="Wet" ID="{BD553443-BB8B-4F2A-90DF-E3C858890B24}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" Origin="Manual"/>
+					</GameSyncExclusionList>
+				</SoundBank>
+				<SoundBank Name="Test_Scene" ID="{0A102B5E-E86C-4F36-98BA-7BF61A181447}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Weapons" ID="{CE73F963-E893-4014-9A23-E166B39CF27E}" WorkUnitID="{CE73F963-E893-4014-9A23-E166B39CF27E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="BasementEnvironment" ID="{06962F81-A381-46E8-8D8B-EF1ECD324387}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Landing" ID="{6C55AE61-9562-4920-A77B-2756A21E300B}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ElectricLamp" ID="{89754173-5E64-499D-B028-E71DC4689FFC}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Footsteps" ID="{A2E71B5F-6406-4B1F-80E1-919D7D85A6E0}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="BarrelExplosion" ID="{99139DA8-BBB4-4C2A-944F-B3286A849828}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Jump" ID="{63A7C97C-64D5-4E9A-A456-8FF733663E0E}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList>
+						<GameSyncRef Name="TailCaseDrop" ID="{85A8DE1D-9084-401F-ADFF-72899D9DAC80}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" Origin="Manual"/>
+						<GameSyncRef Name="Wood" ID="{B1C18B77-05D9-40E4-A4DB-E4AC19BD7B92}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" Origin="Manual"/>
+						<GameSyncRef Name="Sand" ID="{10464C44-5B79-451A-B90D-01D544158C7F}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" Origin="Manual"/>
+						<GameSyncRef Name="Dry" ID="{FFB08503-E8BF-485B-9045-A7293DF25121}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" Origin="Manual"/>
+						<GameSyncRef Name="Dry" ID="{41B6B2DD-831A-4B8C-B21B-D71FD63BDB33}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" Origin="Manual"/>
+						<GameSyncRef Name="Tail" ID="{6091BE7D-043E-4BD3-9276-183CE7B25FBB}" WorkUnitID="{2A41CB0D-F5D7-486E-903B-ECFC00CD8685}" Origin="Manual"/>
+					</GameSyncExclusionList>
 				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>

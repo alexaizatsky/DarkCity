@@ -1,13 +1,22 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	2113622824	CabinReverb			\Default Work Unit\CabinReverb	
+	3410854739	InsideFilter			\Default Work Unit\InsideFilter	
 	4132375975	Tounel_Reverb			\Default Work Unit\Tounel_Reverb	
 
 State	ID	Name	State Group			Notes
+	0	None	CabinReverb			
+	930712164	Off	CabinReverb			
+	1651971902	On	CabinReverb			
+	0	None	InsideFilter			
+	930712164	Off	InsideFilter			
+	1651971902	On	InsideFilter			
 	0	None	Tounel_Reverb			
 	930712164	Off	Tounel_Reverb			
 	1651971902	On	Tounel_Reverb			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	20754959	Off	Tounel_Reverb	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Reverb_Tounel		
+	557778572	Off	CabinReverb	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\CabinReverb		
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	983310469	AUX			\Default Work Unit\Master Audio Bus\World\AUX	
@@ -16,11 +25,13 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2022371148	CityReverb			\Default Work Unit\Master Audio Bus\World\AUX\CityReverb	
+	2113622824	CabinReverb			\Default Work Unit\Master Audio Bus\World\AUX\CabinReverb	
 	3620476813	Reverb_Tounel			\Default Work Unit\Master Audio Bus\World\AUX\Reverb_Tounel	
 
 Effect plug-ins	ID	Name	Type				Notes
 	131511410	Let_The_Power_Fall	Wwise Stereo Delay			
 	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	1551236760	Small_Wooden_Room1	Wwise Matrix Reverb			
 	2656259783	PA_Announcement1	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes

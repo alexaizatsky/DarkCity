@@ -3,18 +3,11 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Footsteps" ID="{EA371A67-B6C6-4846-B3C7-4C12114145C6}">
-					<ChildrenList>
-						<Action Name="" ID="{BC09222A-D332-4625-9572-09748E8BD24D}" ShortID="620078761">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{4EC733B1-D769-471E-AEC9-449D54B23275}" WorkUnitID="{2306A08D-CA50-4129-9ACD-9B41CB46DC40}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Transformator" ID="{81697683-A637-48E1-8CC1-CC1695DE1BB2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="16"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{E2B7E851-79C8-495E-AA16-879A06FC6653}" ShortID="244997800">
 							<ReferenceList>
@@ -26,6 +19,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Jump" ID="{63A7C97C-64D5-4E9A-A456-8FF733663E0E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{D8E0607B-2E4B-45E5-AD29-9DC42CD6FF0D}" ShortID="965294293">
 							<ReferenceList>
@@ -37,6 +34,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Landing" ID="{6C55AE61-9562-4920-A77B-2756A21E300B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{74905B2B-6E5A-4177-B904-C22F910A4FD7}" ShortID="15850068">
 							<ReferenceList>
@@ -47,8 +48,11 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<WorkUnit Name="Weapon" ID="{EA30E1B9-9D63-48ED-B548-44C50D56DF45}" PersistMode="Reference"/>
 				<Event Name="ZombieRoaring" ID="{70606619-A6EC-4532-ACD9-6C35ACC33090}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{D0C3FC40-E010-41DA-8872-8ABF2CAB5835}" ShortID="762373507">
 							<PropertyList>
@@ -63,6 +67,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="ZombieFootsteps" ID="{5EDA9281-E855-4A60-A6DC-2EE0CA88A4FB}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{64A59CE9-5DE1-4033-9F0E-9B0D0DE7883A}" ShortID="898696329">
 							<ReferenceList>
@@ -74,6 +82,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="BarrelExplosion" ID="{99139DA8-BBB4-4C2A-944F-B3286A849828}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{22209113-E570-4C49-86D5-CB59F42AEA38}" ShortID="189023630">
 							<ReferenceList>
@@ -85,6 +97,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="BasementEnvironment" ID="{06962F81-A381-46E8-8D8B-EF1ECD324387}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{785168DC-3236-4800-8A21-9E9FED1E60F5}" ShortID="261263004">
 							<ReferenceList>
@@ -95,25 +111,26 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="CityEnvironment" ID="{C047E29C-3739-4E2F-8FE7-7E0989D9212D}">
+				<Event Name="CitySounds" ID="{C047E29C-3739-4E2F-8FE7-7E0989D9212D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{CDE40309-BA66-445E-B50C-48D95C89E0CE}" ShortID="443760625">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SoundFx's" ID="{11033220-568F-4033-823F-3C6AF0AEC780}" WorkUnitID="{888731D0-027D-40D9-9DED-966DDA3B0E11}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{C1651847-6E09-4431-843A-20BD17C7EB72}" ShortID="44367751">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Transformator" ID="{55CFFCA5-5051-43C3-B340-BFCABBCCC8FB}" WorkUnitID="{888731D0-027D-40D9-9DED-966DDA3B0E11}"/>
+									<ObjectRef Name="CitySoundFx's" ID="{11033220-568F-4033-823F-3C6AF0AEC780}" WorkUnitID="{888731D0-027D-40D9-9DED-966DDA3B0E11}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="ElectricLamp" ID="{89754173-5E64-499D-B028-E71DC4689FFC}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="16"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{DF4C7688-39B8-46CA-BFD4-DBBD8B9D2581}" ShortID="289047730">
 							<ReferenceList>
@@ -124,6 +141,59 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Footsteps" ID="{A2E71B5F-6406-4B1F-80E1-919D7D85A6E0}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{0D3C9963-E6AF-4909-8439-DAC7E0BAF1FE}" ShortID="1072619535">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{4EC733B1-D769-471E-AEC9-449D54B23275}" WorkUnitID="{2306A08D-CA50-4129-9ACD-9B41CB46DC40}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="IslandAmbience" ID="{F422EC96-9769-4FE3-8E2A-B705B7B4E998}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{00A8867B-1607-43FB-B8A7-02C1B54682F8}" ShortID="685445795">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Birds" ID="{6CCC754B-50BF-4E26-9447-B0FB847B8BD8}" WorkUnitID="{66F5FD19-8C86-4234-8F3B-1FD8962092E0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C547C77B-F3DF-428B-B75D-C1EF474ED470}" ShortID="662675410">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Palms+Wind" ID="{F6C2A7A2-5508-4A28-A6DB-FD4D64310850}" WorkUnitID="{66F5FD19-8C86-4234-8F3B-1FD8962092E0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sea" ID="{F9CE6E8D-20C9-4DAF-A765-9719B24B9098}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="16"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{E0037EEE-E376-47F1-9A82-1CD2C077D302}" ShortID="419468253">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sea" ID="{0949D362-1007-46EA-93E4-8E02CBC22D3C}" WorkUnitID="{4A96DC33-35A2-40AD-8A0C-6F637CE9279C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<WorkUnit Name="Weapons" ID="{CE73F963-E893-4014-9A23-E166B39CF27E}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

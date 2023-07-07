@@ -1,0 +1,98 @@
+Event	ID	Name			Wwise Object Path	Notes
+	273706790	IslandAmbience			\Default Work Unit\IslandAmbience	
+	376462290	Sea			\Default Work Unit\Sea	
+	1853775347	M16			\Default Work Unit\Weapons\M16	
+	2314377922	BarrelExplosion			\Default Work Unit\BarrelExplosion	
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+	2548270042	Landing			\Default Work Unit\Landing	
+	3833651337	Jump			\Default Work Unit\Jump	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2828982534	WeaponEnvType			\Default Work Unit\WeaponEnvType	
+	4040317175	Ground_Type			\Default Work Unit\Ground_Type	
+
+Switch	ID	Name	Switch Group			Notes
+	513139656	Mountain	WeaponEnvType			
+	630539344	Dry	WeaponEnvType			
+	2507524830	CaseDrop	WeaponEnvType			
+	3122859639	Tail	WeaponEnvType			
+	4073099416	TailCaseDrop	WeaponEnvType			
+	630539344	Dry	Ground_Type			
+	803837735	Sand	Ground_Type			
+	1181096339	Wet	Ground_Type			
+	2058049674	Wood	Ground_Type			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3410854739	InsideFilter			\Default Work Unit\InsideFilter	
+
+State	ID	Name	State Group			Notes
+	0	None	InsideFilter			
+	930712164	Off	InsideFilter			
+	1651971902	On	InsideFilter			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	129644589	On	InsideFilter	\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Palms+Wind		
+	269624470	On	InsideFilter	\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds		
+	686634156	On	InsideFilter	\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Emiters\Sea		
+
+Effect plug-ins	ID	Name	Type				Notes
+	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	346991975	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\New Sound SFX\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	50178588	Footstep_Wood02	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Wood02_A96FB3F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Wood\Heel\Footstep_Wood02		31872
+	64293849	Footstep_Wood02	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Wood02_E3391B84.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Wood\Toe\Footstep_Wood02		56764
+	84503737	Bird6	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Bird6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\Bird6		392908
+	110661525	Bird5	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Bird5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\Bird5		103476
+	124863758	Seagull2	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Seagull2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\Seagull2		507456
+	177491537	CaseDrop3	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\CaseDrop3_89253CE8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16CaseDrop\Case Drop\Case_Drop1\CaseDrop3		59936
+	179117578	M16_RiffleShot2	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\M16_RiffleShot2_68DF6C99.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16Tail\Riffle_M16_Shot_Player\M16_RiffleShot2		78380
+	185288935	M16_RiffleShot1	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\M16_RiffleShot1_D501FC6D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16Tail\Riffle_M16_Shot_Player\M16_RiffleShot1		76892
+	193301177	Jump3	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Jump3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump3		96064
+	248752670	Palms+Wind	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Palms+Wind_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Palms+Wind		4586464
+	250480441	Footstep_Wood03	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Wood03_21394F7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Wood\Heel\Footstep_Wood03		31716
+	277637142	Seagul1	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Seagul1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\Seagul1		338864
+	284860275	Jump	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump		96064
+	291588537	Bird8	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Bird8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\Bird8		88264
+	308664535	EXPLOSION_Medium_Debris_stereo	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\EXPLOSION_Medium_Debris_stereo_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\BarrelMix\EXPLOSION_Medium_Debris_stereo		183808
+	339192588	Footstep_Send03	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Send03_EF963E62.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Sand\Heel\Footstep_Send03		19968
+	352273161	Footstep_Wood01	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Wood01_949809E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Wood\Toe\Footstep_Wood01		62760
+	356931039	Footstep_Send04	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Send04_EB38DA24.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Sand\Heel\Footstep_Send04		16456
+	394533736	Sea	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Sea_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Emiters\Sea		4233664
+	433133940	M16_RiffleShot3	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\M16_RiffleShot3_37D88494.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16Tail\Riffle_M16_Shot_Player\M16_RiffleShot3		68512
+	442161098	Tail1	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Tail1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16Tail\Tail\Tail1		529264
+	450914330	Footstep_Send02	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Send02_ADD13745.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Sand\Toe\Footstep_Send02		82516
+	458132233	M16_RiffleShot5	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\M16_RiffleShot5_A128D43B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16Tail\Riffle_M16_Shot_Player\M16_RiffleShot5		67132
+	460592943	Footstep_Send03	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Send03_496452F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Sand\Toe\Footstep_Send03		79172
+	470774498	CaseDrop2	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\CaseDrop2_83831198.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16CaseDrop\Case Drop\Case_Drop2\CaseDrop2		158548
+	505219137	M16_RiffleShot4	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\M16_RiffleShot4_9BAF07D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16Tail\Riffle_M16_Shot_Player\M16_RiffleShot4		79004
+	506858627	Footstep_Wood05	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Wood05_B3F7BCD8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Wood\Toe\Footstep_Wood05		58456
+	521199292	Footstep_Send04	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Send04_36CC8863.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Sand\Toe\Footstep_Send04		82016
+	524629453	Bird4	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Bird4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\Bird4		154416
+	548816155	Footstep_Send01	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Send01_32B0CF57.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Sand\Toe\Footstep_Send01		78672
+	577995905	Bird1	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Bird1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\Bird1		352864
+	594762900	CaseDrop4	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\CaseDrop4_EF63C500.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16CaseDrop\Case Drop\Case_Drop1\CaseDrop4		49064
+	631541176	CaseDrop3	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\CaseDrop3_8F049691.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16CaseDrop\Case Drop\Case_Drop2\CaseDrop3		194648
+	638527051	EXPLOSION_Medium_Fast_with_Rock_Debris_stereo	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\EXPLOSION_Medium_Fast_with_Rock_Debris_stereo_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\BarrelMix\EXPLOSION_Medium_Fast_with_Rock_Debris_stereo		250944
+	648670622	CaseDrop1	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\CaseDrop1_09682341.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16CaseDrop\Case Drop\Case_Drop1\CaseDrop1		58636
+	660856220	CaseDrop2	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\CaseDrop2_3E8EF46C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16CaseDrop\Case Drop\Case_Drop1\CaseDrop2		55956
+	715785279	CaseDrop4	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\CaseDrop4_36E6AFE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16CaseDrop\Case Drop\Case_Drop2\CaseDrop4		171948
+	774288649	Footstep_Send02	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Send02_6CA520B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Sand\Heel\Footstep_Send02		14780
+	779983631	Footstep_Wood04	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Wood04_21394F7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Wood\Heel\Footstep_Wood04		31716
+	806949931	Footstep_Wood05	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Wood05_3E0F17CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Wood\Heel\Footstep_Wood05		31412
+	813649510	Footstep_Wood01	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Wood01_45847E99.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Wood\Heel\Footstep_Wood01		25880
+	856958764	Bird3	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Bird3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\Bird3		275688
+	874697341	Footstep_Send01	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Send01_D07FA2F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Sand\Heel\Footstep_Send01		17792
+	883380855	Jump2	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Jump2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump2		96064
+	936616754	CaseDrop1	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\CaseDrop1_DFA09826.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16CaseDrop\Case Drop\Case_Drop2\CaseDrop1		140940
+	941274187	Footstep_Wood04	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Wood04_0C148AC4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Wood\Toe\Footstep_Wood04		56456
+	975881576	Bird7	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Bird7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\Bird7		352864
+	1011960462	Mountain	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\MontainTail1_73FB3B73.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\MontainTail\Mountain		396272
+	1012718319	Jump4	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Jump4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Jump\Jump4		96064
+	1037003027	Footstep_Wood03	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Footstep_Wood03_0DFB4FD4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Character\Footsteps\FS_Wood\Toe\Footstep_Wood03		58608
+	1048681728	Bird2	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Bird2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\IslandEnvironment\Birds\Bird2		132364
+	1060978808	Tail2	Y:\Documents\GitHub\DarkCity\DarkCity-main_WwiseProject\.cache\Windows\SFX\Tail2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapon\M16Switch\M16Tail\Tail\Tail2		529264
+

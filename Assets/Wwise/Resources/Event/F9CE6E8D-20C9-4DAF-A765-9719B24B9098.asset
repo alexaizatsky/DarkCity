@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a4dce69e4af491fa02eaa7a3e9202d, type: 3}
+  m_Name: F9CE6E8D-20C9-4DAF-A765-9719B24B9098
+  m_EditorClassIdentifier: 
+  objectName: Sea
+  id: 376462290
+  guid: F9CE6E8D-20C9-4DAF-A765-9719B24B9098

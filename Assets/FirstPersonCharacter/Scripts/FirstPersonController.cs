@@ -170,7 +170,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
 
-            AkSoundEngine.PostEvent("Footsteps", gameObject);
+            AkSoundEngine.PostEvent("Footsteps", this.gameObject);
         }
 
 

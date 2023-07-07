@@ -2,12 +2,33 @@
 <WwiseDocument Type="WorkUnit" ID="{D1CF987D-1F32-4151-8EE1-D8ED39F091D1}" SchemaVersion="94">
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{D1CF987D-1F32-4151-8EE1-D8ED39F091D1}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="24"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<StateGroup Name="Tounel_Reverb" ID="{F97A258C-6B4C-4332-9022-6FC17783C9EC}">
 					<ChildrenList>
 						<State Name="None" ID="{BC6F9723-09CE-4CA1-91A0-59CB87174DBA}"/>
 						<State Name="On" ID="{63A8DB55-CE5E-4C73-9544-254E726477B7}"/>
 						<State Name="Off" ID="{D140F9D4-7966-4732-BF32-6DD7CC7B7594}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="CabinReverb" ID="{210C190D-E19A-4991-968D-A169155B002F}">
+					<ChildrenList>
+						<State Name="None" ID="{5C959D6B-A4B3-4555-94E9-1EE0C839BD56}"/>
+						<State Name="On" ID="{9F67A117-678F-4A1A-A32C-2DABDB39E8B5}"/>
+						<State Name="Off" ID="{85ECD563-12CE-4618-93A5-F6A5CF179FC7}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="InsideFilter" ID="{1F79AA94-AC7A-4AF2-B5AC-FB4C802D3120}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{08DB16F3-A81B-4BBB-851E-9D22A433EA81}"/>
+						<State Name="On" ID="{E5825D15-861E-497A-8DE8-D0980284DD2C}"/>
+						<State Name="Off" ID="{56D90CB1-F4DA-492F-8696-65BDC53C14D5}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

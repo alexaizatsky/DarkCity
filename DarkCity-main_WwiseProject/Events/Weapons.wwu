@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CE73F963-E893-4014-9A23-E166B39CF27E}" SchemaVersion="94" RootDocumentID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}">
+	<Events>
+		<WorkUnit Name="Weapons" ID="{CE73F963-E893-4014-9A23-E166B39CF27E}" OwnerID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="M16" ID="{648FAF3D-1D6F-4CA2-B732-2331428E3C8F}">
+					<ChildrenList>
+						<Action Name="" ID="{F0BD6D8E-1F85-4BBA-8D05-CF8358F10FA9}" ShortID="266273196">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="M16Switch" ID="{C7B49C12-9409-44D2-BBB1-E086728AD1D2}" WorkUnitID="{F7D3385E-6B05-41EB-AC3A-CA817014FB03}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -61,7 +61,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b61ae63afc2e634f8aa9f80d3e4f328f
     GuidInternal: 
-    m_lastTime: -8585155382444775808
+    m_lastTime: -8585149498044775808
     List:
     - name: IslandScene
       guid: 7506510c3333ff44b56eedbf3f41a0c4
@@ -90,12 +90,21 @@ MonoBehaviour:
       - ElementName: Objects
         ObjectType: 7
       Path: Default Work Unit/Objects
+    - name: Test_Scene
+      guid: 5e2b100a6ce8364f98ba7bf61a181447
+      id: 1863469084
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Test_Scene
+        ObjectType: 7
+      Path: Default Work Unit/Test_Scene
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: a10ebc08e636b04c9bfc9db8a10587a9
     GuidInternal: 
-    m_lastTime: -8585155382444775808
+    m_lastTime: -8585149522664775808
     List:
     - name: BarrelExplosion
       guid: a89d1399b4bb2a4c944fb3286a849828
@@ -107,8 +116,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/BarrelExplosion
       maxAttenuation: 80
-      maxDuration: 1.552737
-      minDuration: 1.322389
+      maxDuration: 1.822156
+      minDuration: 1.265593
     - name: BasementEnvironment
       guid: 812f960681a3e8468d8bef1ecd324387
       id: 3503567413
@@ -121,15 +130,15 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: CityEnvironment
+    - name: CitySounds
       guid: 9ce247c039372f4e8fe77e0989d9212d
-      id: 547487259
+      id: 2963202956
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: CityEnvironment
+      - ElementName: CitySounds
         ObjectType: 3
-      Path: Default Work Unit/CityEnvironment
+      Path: Default Work Unit/CitySounds
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -142,11 +151,11 @@ MonoBehaviour:
       - ElementName: ElectricLamp
         ObjectType: 3
       Path: Default Work Unit/ElectricLamp
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: Footsteps
-      guid: 671a37eac6b64648b3c74c12114145c6
+      guid: 5f1be7a206641f4b80e1919d7d85a6e0
       id: 2385628198
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -156,7 +165,19 @@ MonoBehaviour:
       Path: Default Work Unit/Footsteps
       maxAttenuation: 0
       maxDuration: 0.732664
-      minDuration: 0.371786
+      minDuration: 0.358772
+    - name: IslandAmbience
+      guid: 96ec22f46997e34f8e2ab705b7b4e998
+      id: 273706790
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: IslandAmbience
+        ObjectType: 3
+      Path: Default Work Unit/IslandAmbience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Jump
       guid: 7cc9a763d5649a4ea4568ff733663e0e
       id: 3833651337
@@ -179,8 +200,20 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Landing
       maxAttenuation: 0
-      maxDuration: 0.5
-      minDuration: 0.5
+      maxDuration: 0
+      minDuration: 0
+    - name: Sea
+      guid: 8d6ecef9c920af4da7659719b24b9098
+      id: 376462290
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sea
+        ObjectType: 3
+      Path: Default Work Unit/Sea
+      maxAttenuation: 80
+      maxDuration: -1
+      minDuration: -1
     - name: Transformator
       guid: 8376698137a6e1488cc1cc1695de1bb2
       id: 2827845883
@@ -217,26 +250,26 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 2.038701
       minDuration: 1.525488
-  - PhysicalPath: Events/Weapon.wwu
+  - PhysicalPath: Events/Weapons.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
-    guid: b9e130ea639ded48b54844c50d56df45
+    guid: 63f973ce93e814409a23e166b39cf27e
     GuidInternal: 
-    m_lastTime: -8585163988314775808
+    m_lastTime: -8585149522664775808
     List:
-    - name: M16_Riffle_Shot_Player
-      guid: 5fdbc4029b355a48a1ada18c1871423b
-      id: 4143027357
+    - name: M16
+      guid: 3daf8f646f1da24cb7322331428e3c8f
+      id: 1853775347
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Weapon
+      - ElementName: Weapons
         ObjectType: 12
-      - ElementName: M16_Riffle_Shot_Player
+      - ElementName: M16
         ObjectType: 3
-      Path: Default Work Unit/Weapon/M16_Riffle_Shot_Player
+      Path: Default Work Unit/Weapons/M16
       maxAttenuation: 0
-      maxDuration: 1.742497
-      minDuration: 1.376389
+      maxDuration: 3.05
+      minDuration: 0.380208
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -287,7 +320,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 0dcb412ad7f56e48903becfc00cd8685
     GuidInternal: 
-    m_lastTime: -8585155369794775808
+    m_lastTime: -8585149527744775808
     List:
     - name: Ground_Type
       guid: 9dd11859ab70dd48bb7abde613d8d337
@@ -317,6 +350,49 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: Wet
           ObjectType: 10
+      - name: Wood
+        guid: 778bc1b1d905e440a4dbe4ac19bd7b92
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: WeaponEnvType
+      guid: 4c264ca814291748b9cc3f26c683af51
+      id: 2828982534
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: WeaponEnvType
+        ObjectType: 11
+      Path: Default Work Unit/WeaponEnvType
+      values:
+      - name: CaseDrop
+        guid: eb497a1f6a9d0e4fb06c7e01c48d31dd
+        id: 2507524830
+        PathAndIcons:
+        - ElementName: CaseDrop
+          ObjectType: 10
+      - name: Dry
+        guid: 0385b0ffbfe85b489045a7293df25121
+        id: 630539344
+        PathAndIcons:
+        - ElementName: Dry
+          ObjectType: 10
+      - name: Tail
+        guid: 7dbe91603e04d34b9276183ce7b25fbb
+        id: 3122859639
+        PathAndIcons:
+        - ElementName: Tail
+          ObjectType: 10
+      - name: TailCaseDrop
+        guid: 1ddea88584901f40adff72899d9dac80
+        id: 4073099416
+        PathAndIcons:
+        - ElementName: TailCaseDrop
+          ObjectType: 10
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -329,8 +405,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /DarkCity-main_WwiseProject
-  - /DarkCity-main_WwiseProject/Switches
-  - /DarkCity-main_WwiseProject/Switches/Default Work Unit
-  - /DarkCity-main_WwiseProject/Switches/Default Work Unit/Ground_Type
+  - /DarkCity-main_WwiseProject/States
+  - /DarkCity-main_WwiseProject/States/Default Work Unit
+  - /DarkCity-main_WwiseProject/States/Default Work Unit/Tounel_Reverb
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
