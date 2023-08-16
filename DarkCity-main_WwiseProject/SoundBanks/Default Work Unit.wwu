@@ -33,6 +33,7 @@
 						<ObjectRef Name="Landing" ID="{6C55AE61-9562-4920-A77B-2756A21E300B}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Footsteps" ID="{A2E71B5F-6406-4B1F-80E1-919D7D85A6E0}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BarrelExplosion" ID="{99139DA8-BBB4-4C2A-944F-B3286A849828}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="RadioNoize" ID="{F3632B7D-4025-4D3C-BD2B-D9BA1574DE04}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Sea" ID="{F9CE6E8D-20C9-4DAF-A765-9719B24B9098}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Jump" ID="{63A7C97C-64D5-4E9A-A456-8FF733663E0E}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="IslandAmbience" ID="{F422EC96-9769-4FE3-8E2A-B705B7B4E998}" WorkUnitID="{08BC0EA1-36E6-4CB0-9BFC-9DB8A10587A9}" Filter="7" Origin="Manual"/>

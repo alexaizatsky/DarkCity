@@ -6,8 +6,8 @@
 				<WorkUnit Name="Main Character" ID="{2306A08D-CA50-4129-9ACD-9B41CB46DC40}" PersistMode="Reference"/>
 				<WorkUnit Name="Zombies" ID="{D46275AF-FCD2-4B96-86F7-7DD2C15B8BF2}" PersistMode="Reference"/>
 				<WorkUnit Name="Weapon" ID="{F7D3385E-6B05-41EB-AC3A-CA817014FB03}" PersistMode="Reference"/>
-				<WorkUnit Name="Explosions" ID="{DEF431E8-091C-4AED-832B-DAF8A4A596E5}" PersistMode="Reference"/>
 				<WorkUnit Name="Environment" ID="{C63418B5-29C0-4CEF-8A11-47BDC035D22A}" PersistMode="Reference"/>
+				<WorkUnit Name="Explosions" ID="{6FD70038-B7B5-48D0-B8C0-9D0766C04B1D}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

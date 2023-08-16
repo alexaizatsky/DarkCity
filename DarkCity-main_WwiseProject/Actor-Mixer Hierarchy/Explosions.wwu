@@ -1,25 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{DEF431E8-091C-4AED-832B-DAF8A4A596E5}" SchemaVersion="94" RootDocumentID="{A0228D18-872F-4A7D-A50E-29E3DB487803}">
+<WwiseDocument Type="WorkUnit" ID="{6FD70038-B7B5-48D0-B8C0-9D0766C04B1D}" SchemaVersion="94" RootDocumentID="{A0228D18-872F-4A7D-A50E-29E3DB487803}">
 	<AudioObjects>
-		<WorkUnit Name="Explosions" ID="{DEF431E8-091C-4AED-832B-DAF8A4A596E5}" OwnerID="{A0228D18-872F-4A7D-A50E-29E3DB487803}" PersistMode="Nested">
+		<WorkUnit Name="Explosions" ID="{6FD70038-B7B5-48D0-B8C0-9D0766C04B1D}" OwnerID="{A0228D18-872F-4A7D-A50E-29E3DB487803}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="23"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
-				<BlendContainer Name="BarrelMix" ID="{06E1A98F-E100-4470-AF6C-45FA55545B47}" ShortID="737195350">
+				<RandomSequenceContainer Name="BarellExpl" ID="{20FC077D-1C96-486E-A137-0C6EF64D2DCF}" ShortID="247480952">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="BarrelExpl1" ID="{A7ABEF54-0A40-42E8-960B-C38EBA399AE4}" ShortID="914597498">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BarrelExpl1" ID="{0E557C67-0CF9-45C7-8E3A-800AD0D9748F}" ShortID="659162201">
+									<Language>SFX</Language>
+									<AudioFile>BarrelExpl1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BarrelExpl1" ID="{0E557C67-0CF9-45C7-8E3A-800AD0D9748F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BarrelExpl2" ID="{D53B4C1A-BB39-444E-BE54-FFB0D748683C}" ShortID="498471566">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BarrelExpl2" ID="{8EE49E35-40A1-4385-BFA6-B81C90BEF701}" ShortID="330873217">
+									<Language>SFX</Language>
+									<AudioFile>BarrelExpl2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BarrelExpl2" ID="{8EE49E35-40A1-4385-BFA6-B81C90BEF701}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BarrelExpl3" ID="{66B122B6-ED16-40DE-A640-460C37C9383F}" ShortID="305378100">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BarrelExpl3" ID="{E28B5AFC-C33B-4C01-9D37-E9469CF5128B}" ShortID="587649393">
+									<Language>SFX</Language>
+									<AudioFile>BarrelExpl3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BarrelExpl3" ID="{E28B5AFC-C33B-4C01-9D37-E9469CF5128B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<BlendContainer Name="BarellExplTail" ID="{68BB4028-93E4-4782-AA7D-1D317624C198}" ShortID="851830001">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-						<Property Name="MaxSoundPerInstance" Type="int16">
+						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="UserAuxSendVolume0" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
+								<Value>-6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -34,78 +95,15 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb_Tounel" ID="{4D771D95-9317-47A7-A6A7-150CA311C0FF}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+							<ObjectRef Name="CityReverb" ID="{CCFF0B31-83C7-447E-88F4-BA1015598FB9}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="EXPLOSION_Medium_Debris_stereo" ID="{9BE443A2-B21C-4F1F-B5C9-913F707BB80D}" ShortID="946439719">
+						<RandomSequenceContainer Name="BarellExpl" ID="{2648982B-B13C-4487-8EE4-1F83E0B63DA7}" ShortID="336721094">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{73D18C40-B7FD-4EDA-A01F-3E6898CAF1E8}">
-												<PropertyList>
-													<Property Name="Max" Type="Real64" Value="152"/>
-													<Property Name="Min" Type="Real64" Value="-101"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{21207E44-F22E-46EA-9F1E-D7C07CD204B0}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Min" Type="Real64" Value="-6"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="EXPLOSION_Medium_Debris_stereo" ID="{CA8940F4-A307-4D9A-813F-F4C6194E72EC}" ShortID="308664535">
-									<Language>SFX</Language>
-									<AudioFile>EXPLOSION_Medium_Debris_stereo.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="EXPLOSION_Medium_Debris_stereo" ID="{CA8940F4-A307-4D9A-813F-F4C6194E72EC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="EXPLOSION_Medium_Weak_Debris_stereo" ID="{79713118-456A-498A-9618-DD70D9AFDD1A}" ShortID="1046665081">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{0315AA7E-DAE6-4C8D-B418-F174266F3E77}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="51"/>
-													<Property Name="Min" Type="Real64" Value="-227"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -118,44 +116,80 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="EXPLOSION_Medium_Weak_Debris_stereo" ID="{E305B465-E83A-45DE-B6F2-C57632BC15C1}" ShortID="951164114">
-									<Language>SFX</Language>
-									<AudioFile>EXPLOSION_Medium_Weak_Debris_stereo.wav</AudioFile>
-								</AudioFileSource>
+								<Sound Name="BarrelExpl1" ID="{0F90AEFB-471A-43FE-8957-A81348C87B19}" ShortID="286434172">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BarrelExpl1" ID="{20258598-F62A-4907-9E0F-2D0A9CEECC1E}" ShortID="749527008">
+											<Language>SFX</Language>
+											<AudioFile>BarrelExpl1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="659162201"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BarrelExpl1" ID="{20258598-F62A-4907-9E0F-2D0A9CEECC1E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BarrelExpl2" ID="{6D10BAF6-6F70-46F0-ADB9-1CFF2758B91B}" ShortID="93834692">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BarrelExpl2" ID="{A0F031E4-C9B7-47A1-87D0-704E22057016}" ShortID="19346907">
+											<Language>SFX</Language>
+											<AudioFile>BarrelExpl2.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="330873217"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BarrelExpl2" ID="{A0F031E4-C9B7-47A1-87D0-704E22057016}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="BarrelExpl3" ID="{D3F03054-B148-4812-B453-8886D721742A}" ShortID="558552770">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BarrelExpl3" ID="{7A3541C1-8F55-4BDD-AED9-A00A819C82A8}" ShortID="503582208">
+											<Language>SFX</Language>
+											<AudioFile>BarrelExpl3.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="587649393"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BarrelExpl3" ID="{7A3541C1-8F55-4BDD-AED9-A00A819C82A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="EXPLOSION_Medium_Weak_Debris_stereo" ID="{E305B465-E83A-45DE-B6F2-C57632BC15C1}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="EXPLOSION_Medium_Fast_with_Rock_Debris_stereo" ID="{8237CDBA-4CAB-43E3-9CA6-8A96A1362C4F}" ShortID="253400323">
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="RockTail" ID="{C45D054F-2D7E-4A35-AF58-2D6E0A298D1F}" ShortID="321346923">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{D94CE39F-C131-4BC5-9D8C-5CCA1A222670}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="202"/>
-													<Property Name="Min" Type="Real64" Value="-429"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
+								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>0.2</Value>
 									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{35B2E1F0-3D5D-4231-BC4F-9200DE2E70B8}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Min" Type="Real64" Value="-10"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -167,15 +201,91 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="EXPLOSION_Medium_Fast_with_Rock_Debris_stereo" ID="{BB9FCDC4-F0D3-44EB-BDE1-50C5F60BE974}" ShortID="638527051">
-									<Language>SFX</Language>
-									<AudioFile>EXPLOSION_Medium_Fast_with_Rock_Debris_stereo.wav</AudioFile>
-								</AudioFileSource>
+								<Sound Name="RockExpl1" ID="{644A84F8-D5CE-412B-829C-4C5636FF77F8}" ShortID="609948439">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RockExpl1" ID="{1F873EF9-F409-432F-9902-DD4FB0489D67}" ShortID="514329946">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.225609756097561"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.298780487804878"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.63414634146342"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RockExpl1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RockExpl1" ID="{1F873EF9-F409-432F-9902-DD4FB0489D67}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="RockExpl2" ID="{6924124C-8198-4B4D-BDBE-470D29329D57}" ShortID="286531131">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RockExpl2" ID="{8CAA68CB-60B0-4545-8A50-56448588D2D6}" ShortID="918365272">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0426829268292683"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.329268292682927"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.201219512195122"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.60365853658536"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RockExpl2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RockExpl2" ID="{8CAA68CB-60B0-4545-8A50-56448588D2D6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="RockExpl3" ID="{9E00A458-A5F7-4540-AD64-050A1611C1A7}" ShortID="88179255">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RockExpl3" ID="{D17DEDA8-1BF6-4BA3-B975-CF037D614353}" ShortID="665905388">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.280487804878049"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.439024390243903"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.86585365853659"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RockExpl3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RockExpl3" ID="{D17DEDA8-1BF6-4BA3-B975-CF037D614353}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="EXPLOSION_Medium_Fast_with_Rock_Debris_stereo" ID="{BB9FCDC4-F0D3-44EB-BDE1-50C5F60BE974}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</BlendContainer>
 			</ChildrenList>

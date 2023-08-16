@@ -6,7 +6,7 @@
 				<RandomSequenceContainer Name="Birds" ID="{6CCC754B-50BF-4E26-9447-B0FB847B8BD8}" ShortID="780660752">
 					<PropertyList>
 						<Property Name="3DPosition" Type="int16" Value="1"/>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
@@ -428,6 +428,37 @@
 					</ActiveSourceList>
 				</Sound>
 				<WorkUnit Name="Emiters" ID="{4A96DC33-35A2-40AD-8A0C-6F637CE9279C}" PersistMode="Reference"/>
+				<Sound Name="RadioNoize" ID="{4FC08460-CF08-4F5D-9060-207F07F6E901}" ShortID="197475936">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="RadioAtt" ID="{B95E6A76-9F44-4C1F-BDE4-FA79B773463F}" WorkUnitID="{C8A5E0AC-A038-4A9C-B127-D32B022EE3AA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB36A5B7-81F8-41B2-B92E-D32C28B007AE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A5EC0670-83DC-4ABB-B60B-469CC0B46916}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="RadioNoize" ID="{7B95A1B5-A5A5-4955-9AAD-1CCE3804EBA0}" ShortID="923487292">
+							<Language>SFX</Language>
+							<AudioFile>RadioNoize.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="RadioNoize" ID="{7B95A1B5-A5A5-4955-9AAD-1CCE3804EBA0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

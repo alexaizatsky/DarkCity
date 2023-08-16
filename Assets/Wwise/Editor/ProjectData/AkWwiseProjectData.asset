@@ -24,8 +24,23 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 7006eca5dc83bb4ab60b469cc0b46916
     GuidInternal: 
-    m_lastTime: -8585156364694775808
+    m_lastTime: -8585119184794775808
     List:
+    - name: CabinReverb
+      guid: 11b4d382218b9e4ab232246a047ee317
+      id: 2113622824
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: AUX
+        ObjectType: 2
+      - ElementName: CabinReverb
+        ObjectType: 1
+      Path: Default Work Unit/Master Audio Bus/World/AUX/CabinReverb
     - name: CityReverb
       guid: 310bffccc7837e4488f4ba1015598fb9
       id: 2022371148
@@ -61,7 +76,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b61ae63afc2e634f8aa9f80d3e4f328f
     GuidInternal: 
-    m_lastTime: -8585149498044775808
+    m_lastTime: -8585149469434775808
     List:
     - name: IslandScene
       guid: 7506510c3333ff44b56eedbf3f41a0c4
@@ -104,7 +119,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: a10ebc08e636b04c9bfc9db8a10587a9
     GuidInternal: 
-    m_lastTime: -8585149522664775808
+    m_lastTime: -8585119247404775808
     List:
     - name: BarrelExplosion
       guid: a89d1399b4bb2a4c944fb3286a849828
@@ -116,8 +131,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/BarrelExplosion
       maxAttenuation: 80
-      maxDuration: 1.822156
-      minDuration: 1.265593
+      maxDuration: 4
+      minDuration: 4
     - name: BasementEnvironment
       guid: 812f960681a3e8468d8bef1ecd324387
       id: 3503567413
@@ -282,8 +297,70 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 7d98cfd1321f51418ee1d8ed39f091d1
     GuidInternal: 
-    m_lastTime: -8585163199114775808
+    m_lastTime: -8585149316484775808
     List:
+    - name: CabinReverb
+      guid: 0d190c219ae19149968da169155b002f
+      id: 2113622824
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CabinReverb
+        ObjectType: 9
+      Path: Default Work Unit/CabinReverb
+      values:
+      - name: None
+        guid: 6b9d955cb3a4554594e91ee0c839bd56
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Off
+        guid: 63d5ec85ce12184693a5f6a5cf179fc7
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Off
+          ObjectType: 8
+      - name: On
+        guid: 17a1679f8f671a4aa32c2dabdb39e8b5
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: On
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: InsideFilter
+      guid: 94aa791f7aacf24ab5acfb4c802d3120
+      id: 3410854739
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InsideFilter
+        ObjectType: 9
+      Path: Default Work Unit/InsideFilter
+      values:
+      - name: None
+        guid: f316db081ba8bb4b851e9d22a433ea81
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Off
+        guid: b10cd956daf42f49869665bdc53c14d5
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Off
+          ObjectType: 8
+      - name: On
+        guid: 155d82e51e867a498de8d0980284dd2c
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: On
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Tounel_Reverb
       guid: 8c257af94c6b324390226fc17783c9ec
       id: 4132375975
@@ -320,7 +397,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 0dcb412ad7f56e48903becfc00cd8685
     GuidInternal: 
-    m_lastTime: -8585149527744775808
+    m_lastTime: -8585149320134775808
     List:
     - name: Ground_Type
       guid: 9dd11859ab70dd48bb7abde613d8d337
@@ -381,6 +458,12 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: Dry
           ObjectType: 10
+      - name: Mountain
+        guid: ef79c69570aff0458a959a00b4b33a8e
+        id: 513139656
+        PathAndIcons:
+        - ElementName: Mountain
+          ObjectType: 10
       - name: Tail
         guid: 7dbe91603e04d34b9276183ce7b25fbb
         id: 3122859639
@@ -405,8 +488,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /DarkCity-main_WwiseProject
-  - /DarkCity-main_WwiseProject/States
-  - /DarkCity-main_WwiseProject/States/Default Work Unit
-  - /DarkCity-main_WwiseProject/States/Default Work Unit/Tounel_Reverb
+  - /DarkCity-main_WwiseProject/Switches
+  - /DarkCity-main_WwiseProject/Switches/Default Work Unit
+  - /DarkCity-main_WwiseProject/Switches/Default Work Unit/Ground_Type
+  - /DarkCity-main_WwiseProject/Switches/Default Work Unit/WeaponEnvType
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

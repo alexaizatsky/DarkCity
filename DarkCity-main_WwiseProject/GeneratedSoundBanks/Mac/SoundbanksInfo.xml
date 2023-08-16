@@ -35,7 +35,7 @@
 			<ShortName>Test_Scene</ShortName>
 			<Path>Test_Scene.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2314377922" Name="BarrelExplosion" ObjectPath="\Events\Default Work Unit\BarrelExplosion" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="1.265593" DurationMax="1.822156"/>
+				<Event Id="2314377922" Name="BarrelExplosion" ObjectPath="\Events\Default Work Unit\BarrelExplosion" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="4.000000" DurationMax="4.000000"/>
 				<Event Id="3503567413" Name="BasementEnvironment" ObjectPath="\Events\Default Work Unit\BasementEnvironment" DurationType="Infinite"/>
 				<Event Id="363840938" Name="ElectricLamp" ObjectPath="\Events\Default Work Unit\ElectricLamp" MaxAttenuation="30.000000" DurationType="Infinite"/>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.358772" DurationMax="0.732664"/>
@@ -84,9 +84,9 @@
 					<ShortName>Jump.wav</ShortName>
 					<Path>SFX/Jump_10C4C929.wem</Path>
 				</File>
-				<File Id="308664535" Language="SFX">
-					<ShortName>EXPLOSION_Medium_Debris_stereo.wav</ShortName>
-					<Path>SFX/EXPLOSION_Medium_Debris_stereo_10C4C929.wem</Path>
+				<File Id="330873217" Language="SFX">
+					<ShortName>BarrelExpl2.wav</ShortName>
+					<Path>SFX/BarrelExpl2_10C4C929.wem</Path>
 				</File>
 				<File Id="399375096" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet6.wav</ShortName>
@@ -116,9 +116,17 @@
 					<ShortName>M16_RiffleShot4.wav</ShortName>
 					<Path>SFX/M16_RiffleShot4_9BAF07D9.wem</Path>
 				</File>
+				<File Id="514329946" Language="SFX">
+					<ShortName>RockExpl1.wav</ShortName>
+					<Path>SFX/RockExpl1_ECE0043B.wem</Path>
+				</File>
 				<File Id="532015600" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet4.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet4_DC92C813.wem</Path>
+				</File>
+				<File Id="587649393" Language="SFX">
+					<ShortName>BarrelExpl3.wav</ShortName>
+					<Path>SFX/BarrelExpl3_10C4C929.wem</Path>
 				</File>
 				<File Id="594762900" Language="SFX">
 					<ShortName>CaseDrop4.wav</ShortName>
@@ -136,17 +144,21 @@
 					<ShortName>Footsteps\Wet\FS_Wet3.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet3_4CE95CF9.wem</Path>
 				</File>
-				<File Id="638527051" Language="SFX">
-					<ShortName>EXPLOSION_Medium_Fast_with_Rock_Debris_stereo.wav</ShortName>
-					<Path>SFX/EXPLOSION_Medium_Fast_with_Rock_Debris_stereo_10C4C929.wem</Path>
-				</File>
 				<File Id="648670622" Language="SFX">
 					<ShortName>CaseDrop1.wav</ShortName>
 					<Path>SFX/CaseDrop1_09682341.wem</Path>
 				</File>
+				<File Id="659162201" Language="SFX">
+					<ShortName>BarrelExpl1.wav</ShortName>
+					<Path>SFX/BarrelExpl1_10C4C929.wem</Path>
+				</File>
 				<File Id="660856220" Language="SFX">
 					<ShortName>CaseDrop2.wav</ShortName>
 					<Path>SFX/CaseDrop2_3E8EF46C.wem</Path>
+				</File>
+				<File Id="665905388" Language="SFX">
+					<ShortName>RockExpl3.wav</ShortName>
+					<Path>SFX/RockExpl3_D65B5A98.wem</Path>
 				</File>
 				<File Id="692758138" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet5.wav</ShortName>
@@ -168,13 +180,17 @@
 					<ShortName>Jump2.wav</ShortName>
 					<Path>SFX/Jump2_10C4C929.wem</Path>
 				</File>
+				<File Id="918365272" Language="SFX">
+					<ShortName>RockExpl2.wav</ShortName>
+					<Path>SFX/RockExpl2_00B3BE9D.wem</Path>
+				</File>
 				<File Id="936616754" Language="SFX">
 					<ShortName>CaseDrop1.wav</ShortName>
 					<Path>SFX/CaseDrop1_DFA09826.wem</Path>
 				</File>
 				<File Id="1011960462" Language="SFX">
 					<ShortName>MontainTail1.wav</ShortName>
-					<Path>SFX/MontainTail1_73FB3B73.wem</Path>
+					<Path>SFX/MontainTail1_1B4F4D74.wem</Path>
 				</File>
 				<File Id="1012718319" Language="SFX">
 					<ShortName>Jump4.wav</ShortName>
@@ -187,7 +203,7 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2314377922" Name="BarrelExplosion" ObjectPath="\Events\Default Work Unit\BarrelExplosion" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="1.265593" DurationMax="1.822156"/>
+				<Event Id="2314377922" Name="BarrelExplosion" ObjectPath="\Events\Default Work Unit\BarrelExplosion" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="4.000000" DurationMax="4.000000"/>
 				<Event Id="2963202956" Name="CitySounds" ObjectPath="\Events\Default Work Unit\CitySounds" DurationType="Infinite"/>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.358772" DurationMax="0.732664"/>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Jump" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
@@ -205,6 +221,10 @@
 					<ShortName>DC_Zombie_Roaring2.wav</ShortName>
 					<Path>SFX/DC_Zombie_Roaring2_FB58FCED.wem</Path>
 				</File>
+				<File Id="39631623" Language="SFX">
+					<ShortName>ScreamWooman01.wav</ShortName>
+					<Path>SFX/ScreamWooman01_10C4C929.wem</Path>
+				</File>
 				<File Id="66504976" Language="SFX">
 					<ShortName>Thunder2.wav</ShortName>
 					<Path>SFX/Thunder2_10C4C929.wem</Path>
@@ -216,6 +236,10 @@
 				<File Id="86408245" Language="SFX">
 					<ShortName>FS_Zombie.wav</ShortName>
 					<Path>SFX/FS_Zombie_4E6DFC93.wem</Path>
+				</File>
+				<File Id="114437233" Language="SFX">
+					<ShortName>ScreamWooman02.wav</ShortName>
+					<Path>SFX/ScreamWooman02_10C4C929.wem</Path>
 				</File>
 				<File Id="132006117" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet4.wav</ShortName>
@@ -236,6 +260,10 @@
 				<File Id="193301177" Language="SFX">
 					<ShortName>Jump3.wav</ShortName>
 					<Path>SFX/Jump3_10C4C929.wem</Path>
+				</File>
+				<File Id="228766136" Language="SFX">
+					<ShortName>Tail2.wav</ShortName>
+					<Path>SFX/Tail2_FD1233A1.wem</Path>
 				</File>
 				<File Id="245728736" Language="SFX">
 					<ShortName>DC_Zombie_Roaring3.wav</ShortName>
@@ -261,13 +289,13 @@
 					<ShortName>Dogs_Bark2.wav</ShortName>
 					<Path>SFX/Dogs_Bark2_10C4C929.wem</Path>
 				</File>
-				<File Id="308664535" Language="SFX">
-					<ShortName>EXPLOSION_Medium_Debris_stereo.wav</ShortName>
-					<Path>SFX/EXPLOSION_Medium_Debris_stereo_10C4C929.wem</Path>
-				</File>
 				<File Id="328943342" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep02.wav</ShortName>
 					<Path>SFX/Footsteps/Concrete/Footstep02_7AB6F5BE.wem</Path>
+				</File>
+				<File Id="330873217" Language="SFX">
+					<ShortName>BarrelExpl2.wav</ShortName>
+					<Path>SFX/BarrelExpl2_10C4C929.wem</Path>
 				</File>
 				<File Id="345654471" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep01.wav</ShortName>
@@ -329,9 +357,17 @@
 					<ShortName>M16_RiffleShot4.wav</ShortName>
 					<Path>SFX/M16_RiffleShot4_9BAF07D9.wem</Path>
 				</File>
+				<File Id="514329946" Language="SFX">
+					<ShortName>RockExpl1.wav</ShortName>
+					<Path>SFX/RockExpl1_ECE0043B.wem</Path>
+				</File>
 				<File Id="532015600" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet4.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet4_DC92C813.wem</Path>
+				</File>
+				<File Id="587649393" Language="SFX">
+					<ShortName>BarrelExpl3.wav</ShortName>
+					<Path>SFX/BarrelExpl3_10C4C929.wem</Path>
 				</File>
 				<File Id="594762900" Language="SFX">
 					<ShortName>CaseDrop4.wav</ShortName>
@@ -341,6 +377,10 @@
 					<ShortName>Footsteps\Wet\FS_Wet3.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet3_884BFA31.wem</Path>
 				</File>
+				<File Id="628714326" Language="SFX">
+					<ShortName>Tail1.wav</ShortName>
+					<Path>SFX/Tail1_E0A3C18B.wem</Path>
+				</File>
 				<File Id="631541176" Language="SFX">
 					<ShortName>CaseDrop3.wav</ShortName>
 					<Path>SFX/CaseDrop3_8F049691.wem</Path>
@@ -348,10 +388,6 @@
 				<File Id="633276371" Language="SFX">
 					<ShortName>Footsteps\Wet\FS_Wet3.wav</ShortName>
 					<Path>SFX/Footsteps/Wet/FS_Wet3_4CE95CF9.wem</Path>
-				</File>
-				<File Id="638527051" Language="SFX">
-					<ShortName>EXPLOSION_Medium_Fast_with_Rock_Debris_stereo.wav</ShortName>
-					<Path>SFX/EXPLOSION_Medium_Fast_with_Rock_Debris_stereo_10C4C929.wem</Path>
 				</File>
 				<File Id="648670622" Language="SFX">
 					<ShortName>CaseDrop1.wav</ShortName>
@@ -361,9 +397,17 @@
 					<ShortName>Footsteps\Concrete\Footstep03.wav</ShortName>
 					<Path>SFX/Footsteps/Concrete/Footstep03_0B0E05F9.wem</Path>
 				</File>
+				<File Id="659162201" Language="SFX">
+					<ShortName>BarrelExpl1.wav</ShortName>
+					<Path>SFX/BarrelExpl1_10C4C929.wem</Path>
+				</File>
 				<File Id="660856220" Language="SFX">
 					<ShortName>CaseDrop2.wav</ShortName>
 					<Path>SFX/CaseDrop2_3E8EF46C.wem</Path>
+				</File>
+				<File Id="665905388" Language="SFX">
+					<ShortName>RockExpl3.wav</ShortName>
+					<Path>SFX/RockExpl3_D65B5A98.wem</Path>
 				</File>
 				<File Id="682526831" Language="SFX">
 					<ShortName>FS_Zombie.wav</ShortName>
@@ -401,9 +445,17 @@
 					<ShortName>DC_Zombie_Roaring4.wav</ShortName>
 					<Path>SFX/DC_Zombie_Roaring4_B2A6219D.wem</Path>
 				</File>
+				<File Id="833761041" Language="SFX">
+					<ShortName>ScreamWooman03.wav</ShortName>
+					<Path>SFX/ScreamWooman03_10C4C929.wem</Path>
+				</File>
 				<File Id="883380855" Language="SFX">
 					<ShortName>Jump2.wav</ShortName>
 					<Path>SFX/Jump2_10C4C929.wem</Path>
+				</File>
+				<File Id="918365272" Language="SFX">
+					<ShortName>RockExpl2.wav</ShortName>
+					<Path>SFX/RockExpl2_00B3BE9D.wem</Path>
 				</File>
 				<File Id="936616754" Language="SFX">
 					<ShortName>CaseDrop1.wav</ShortName>
@@ -417,17 +469,13 @@
 					<ShortName>Footsteps\Concrete\Footstep02.wav</ShortName>
 					<Path>SFX/Footsteps/Concrete/Footstep02_01E94577.wem</Path>
 				</File>
-				<File Id="986341138" Language="SFX">
-					<ShortName>Dogs_Bark1.wav</ShortName>
-					<Path>SFX/Dogs_Bark1_10C4C929.wem</Path>
-				</File>
 				<File Id="996462194" Language="SFX">
 					<ShortName>Footsteps\Concrete\Footstep04.wav</ShortName>
 					<Path>SFX/Footsteps/Concrete/Footstep04_0C4B17BE.wem</Path>
 				</File>
 				<File Id="1011960462" Language="SFX">
 					<ShortName>MontainTail1.wav</ShortName>
-					<Path>SFX/MontainTail1_73FB3B73.wem</Path>
+					<Path>SFX/MontainTail1_1B4F4D74.wem</Path>
 				</File>
 				<File Id="1012718319" Language="SFX">
 					<ShortName>Jump4.wav</ShortName>
@@ -444,12 +492,13 @@
 			<ShortName>IslandScene</ShortName>
 			<Path>IslandScene.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2314377922" Name="BarrelExplosion" ObjectPath="\Events\Default Work Unit\BarrelExplosion" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="1.265593" DurationMax="1.822156"/>
+				<Event Id="2314377922" Name="BarrelExplosion" ObjectPath="\Events\Default Work Unit\BarrelExplosion" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="4.000000" DurationMax="4.000000"/>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.358772" DurationMax="0.732664"/>
 				<Event Id="273706790" Name="IslandAmbience" ObjectPath="\Events\Default Work Unit\IslandAmbience" DurationType="Infinite"/>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Jump" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000"/>
 				<Event Id="2548270042" Name="Landing" ObjectPath="\Events\Default Work Unit\Landing" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1853775347" Name="M16" ObjectPath="\Events\Default Work Unit\Weapons\M16" DurationType="OneShot" DurationMin="0.380208" DurationMax="3.050000"/>
+				<Event Id="628360667" Name="RadioNoize" ObjectPath="\Events\Default Work Unit\RadioNoize" MaxAttenuation="40.000000" DurationType="Infinite"/>
 				<Event Id="376462290" Name="Sea" ObjectPath="\Events\Default Work Unit\Sea" MaxAttenuation="80.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -489,6 +538,10 @@
 					<ShortName>Jump3.wav</ShortName>
 					<Path>SFX/Jump3_10C4C929.wem</Path>
 				</File>
+				<File Id="228766136" Language="SFX">
+					<ShortName>Tail2.wav</ShortName>
+					<Path>SFX/Tail2_FD1233A1.wem</Path>
+				</File>
 				<File Id="248752670" Language="SFX">
 					<ShortName>Palms+Wind.wav</ShortName>
 					<Path>SFX/Palms+Wind_D79FB2B7.wem</Path>
@@ -509,9 +562,9 @@
 					<ShortName>Bird8.wav</ShortName>
 					<Path>SFX/Bird8_10C4C929.wem</Path>
 				</File>
-				<File Id="308664535" Language="SFX">
-					<ShortName>EXPLOSION_Medium_Debris_stereo.wav</ShortName>
-					<Path>SFX/EXPLOSION_Medium_Debris_stereo_10C4C929.wem</Path>
+				<File Id="330873217" Language="SFX">
+					<ShortName>BarrelExpl2.wav</ShortName>
+					<Path>SFX/BarrelExpl2_10C4C929.wem</Path>
 				</File>
 				<File Id="339192588" Language="SFX">
 					<ShortName>Footstep_Send03.wav</ShortName>
@@ -561,6 +614,10 @@
 					<ShortName>Footstep_Wood05.wav</ShortName>
 					<Path>SFX/Footstep_Wood05_B3F7BCD8.wem</Path>
 				</File>
+				<File Id="514329946" Language="SFX">
+					<ShortName>RockExpl1.wav</ShortName>
+					<Path>SFX/RockExpl1_ECE0043B.wem</Path>
+				</File>
 				<File Id="521199292" Language="SFX">
 					<ShortName>Footstep_Send04.wav</ShortName>
 					<Path>SFX/Footstep_Send04_36CC8863.wem</Path>
@@ -577,25 +634,37 @@
 					<ShortName>Bird1.wav</ShortName>
 					<Path>SFX/Bird1_10C4C929.wem</Path>
 				</File>
+				<File Id="587649393" Language="SFX">
+					<ShortName>BarrelExpl3.wav</ShortName>
+					<Path>SFX/BarrelExpl3_10C4C929.wem</Path>
+				</File>
 				<File Id="594762900" Language="SFX">
 					<ShortName>CaseDrop4.wav</ShortName>
 					<Path>SFX/CaseDrop4_EF63C500.wem</Path>
+				</File>
+				<File Id="628714326" Language="SFX">
+					<ShortName>Tail1.wav</ShortName>
+					<Path>SFX/Tail1_E0A3C18B.wem</Path>
 				</File>
 				<File Id="631541176" Language="SFX">
 					<ShortName>CaseDrop3.wav</ShortName>
 					<Path>SFX/CaseDrop3_8F049691.wem</Path>
 				</File>
-				<File Id="638527051" Language="SFX">
-					<ShortName>EXPLOSION_Medium_Fast_with_Rock_Debris_stereo.wav</ShortName>
-					<Path>SFX/EXPLOSION_Medium_Fast_with_Rock_Debris_stereo_10C4C929.wem</Path>
-				</File>
 				<File Id="648670622" Language="SFX">
 					<ShortName>CaseDrop1.wav</ShortName>
 					<Path>SFX/CaseDrop1_09682341.wem</Path>
 				</File>
+				<File Id="659162201" Language="SFX">
+					<ShortName>BarrelExpl1.wav</ShortName>
+					<Path>SFX/BarrelExpl1_10C4C929.wem</Path>
+				</File>
 				<File Id="660856220" Language="SFX">
 					<ShortName>CaseDrop2.wav</ShortName>
 					<Path>SFX/CaseDrop2_3E8EF46C.wem</Path>
+				</File>
+				<File Id="665905388" Language="SFX">
+					<ShortName>RockExpl3.wav</ShortName>
+					<Path>SFX/RockExpl3_D65B5A98.wem</Path>
 				</File>
 				<File Id="715785279" Language="SFX">
 					<ShortName>CaseDrop4.wav</ShortName>
@@ -629,6 +698,14 @@
 					<ShortName>Jump2.wav</ShortName>
 					<Path>SFX/Jump2_10C4C929.wem</Path>
 				</File>
+				<File Id="918365272" Language="SFX">
+					<ShortName>RockExpl2.wav</ShortName>
+					<Path>SFX/RockExpl2_00B3BE9D.wem</Path>
+				</File>
+				<File Id="923487292" Language="SFX">
+					<ShortName>RadioNoize.wav</ShortName>
+					<Path>SFX/RadioNoize_D79FB2B7.wem</Path>
+				</File>
 				<File Id="936616754" Language="SFX">
 					<ShortName>CaseDrop1.wav</ShortName>
 					<Path>SFX/CaseDrop1_DFA09826.wem</Path>
@@ -643,7 +720,7 @@
 				</File>
 				<File Id="1011960462" Language="SFX">
 					<ShortName>MontainTail1.wav</ShortName>
-					<Path>SFX/MontainTail1_73FB3B73.wem</Path>
+					<Path>SFX/MontainTail1_1B4F4D74.wem</Path>
 				</File>
 				<File Id="1012718319" Language="SFX">
 					<ShortName>Jump4.wav</ShortName>

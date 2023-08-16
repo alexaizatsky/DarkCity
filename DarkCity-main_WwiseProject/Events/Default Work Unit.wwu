@@ -90,7 +90,7 @@
 						<Action Name="" ID="{22209113-E570-4C49-86D5-CB59F42AEA38}" ShortID="189023630">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BarrelMix" ID="{06E1A98F-E100-4470-AF6C-45FA55545B47}" WorkUnitID="{DEF431E8-091C-4AED-832B-DAF8A4A596E5}"/>
+									<ObjectRef Name="BarellExplTail" ID="{68BB4028-93E4-4782-AA7D-1D317624C198}" WorkUnitID="{6FD70038-B7B5-48D0-B8C0-9D0766C04B1D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -194,6 +194,21 @@
 					</ChildrenList>
 				</Event>
 				<WorkUnit Name="Weapons" ID="{CE73F963-E893-4014-9A23-E166B39CF27E}" PersistMode="Reference"/>
+				<Event Name="RadioNoize" ID="{F3632B7D-4025-4D3C-BD2B-D9BA1574DE04}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{2A2576F1-AE62-43BA-8F47-7207D615F377}" ShortID="46808336">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RadioNoize" ID="{4FC08460-CF08-4F5D-9060-207F07F6E901}" WorkUnitID="{66F5FD19-8C86-4234-8F3B-1FD8962092E0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

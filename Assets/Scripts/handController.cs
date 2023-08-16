@@ -117,7 +117,7 @@ public class handController : MonoBehaviour
     void RaycastShot()
     {
         RaycastHit hit;
-        if (Physics.Raycast(gunPoint.position, gunPoint.forward, out hit, 100, raycastLayers))
+        if (Physics.Raycast(gunPoint.position, gunPoint.forward, out hit, 200, raycastLayers))
         {
             //print("RAYCAST "+hit.collider.gameObject.name+" layer "+hit.collider.gameObject.layer);
             if (hit.collider.gameObject.layer == 11)

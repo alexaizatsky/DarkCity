@@ -21,10 +21,10 @@
 										<AuxBus Name="CityReverb" ID="{CCFF0B31-83C7-447E-88F4-BA1015598FB9}">
 											<ReferenceList>
 												<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Let_The_Power_Fall" ID="{6C4D2827-F82F-4BE3-A8DF-F0F0FAE93630}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<ObjectRef Name="PA_Announcement1" ID="{65E0ACE4-B404-4485-87A4-5907277D9858}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="PA_Announcement1" ID="{65E0ACE4-B404-4485-87A4-5907277D9858}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<ObjectRef Name="Let_The_Power_Fall" ID="{6C4D2827-F82F-4BE3-A8DF-F0F0FAE93630}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 											</ReferenceList>
 										</AuxBus>
